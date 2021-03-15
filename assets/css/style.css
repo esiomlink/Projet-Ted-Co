@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+
+
+:root {
+  --primary: #4F934F;
+  --secondary: #9F825F;
+  --secondaryBis: #E4D5C2;
+  --white: #FFF;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  color: rgba(0, 0, 0, 0.801);
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 150%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  color: rgba(0, 0, 0, 0.801);
+  text-decoration: none;
+}
+
+/* TOGGLE MENU */
+.burgerMenu{
+  cursor: pointer;
+  height: 42px;
+  position: absolute;
+  right: -10px;
+  top: 40px;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  z-index: 4;
+}
+.lignes {
+  background: #000;
+  border-radius: 5px;
+  height: 4px;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+.lignes:nth-child(1) {
+  top: 0px;
+}
+.lignes:nth-child(2) {
+  top: 12px;
+}
+.lignes:nth-child(3) {
+  top: 24px;
+}
+.burgerMenu.show .lignes:nth-child(1) {
+  top: 15px;
+  transform: rotate(135deg);
+}
+.burgerMenu.show .lignes:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+.burgerMenu.show .lignes:nth-child(3) {
+  top: 15px;
+  transform: rotate(-135deg);
+}
+header nav {
+  background-color: rgb(224, 224, 224);
+  height: 20%;
+  opacity: 0;
+  overflow: hidden;
+  padding: 20px 0px;
+  position: fixed;
+  text-align: center;
+  transition: all 350ms ease-in-out;
+  top: -250px;
+  width: 100%;
+}
+header nav.show {
+  opacity: 1;
+  top: 0;
+}
+.title {
+  margin-bottom: 1rem;
+}
+header nav a {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+/* MEDIA QUERY DESKTOP */
+@media (min-width: 799px) {
+  .burgerMenu {
+    display: none;
+  }
+  header {
+    height: 20%;
+    width: 100%;
+  }
+  header nav {
+    align-items: center;
+    background-color: rgb(190, 38, 38);
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 1;
+    top: 0;
+   
+  }
+}
