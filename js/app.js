@@ -6,3 +6,15 @@ hamburger.addEventListener("click", function() {
 	hamburger.classList.toggle("show");
 	navLinks.classList.toggle("show");
 });
+
+/* GO UP BTN */
+const btn = document.querySelector('.go-up-btn');
+btn.addEventListener('click', () => {
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    })
+
+})
