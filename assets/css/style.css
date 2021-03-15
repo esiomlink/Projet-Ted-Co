@@ -118,6 +118,7 @@ header nav a {
 footer{
   background-color :rgb(200,200,200); /* temp */
   bottom:0;
+  position: absolute;
   width:100%;
   border-radius:15px 15px 0 0; /* temp */
   padding : 0;
