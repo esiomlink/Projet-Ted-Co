@@ -114,3 +114,28 @@ header nav a {
    
   }
 }
+/* ***** FOOTER ****** */
+footer{
+  background-color :rgb(200,200,200); /* temp */
+  bottom:0;
+  width:100%;
+  border-radius:15px 15px 0 0; /* temp */
+  padding : 0;
+}
+.site-plan{
+  display:flex;
+  justify-content:center;
+  padding:0;
+}
+#part-nav{
+  list-style: none;
+  margin:  0 5px 0 5px;
+}
+.footer-title{
+  text-align: center;
+}
+.footer-legal{
+  position:flex;
+  justify-content: center ;
+  text-align: center;
+}
