@@ -2,7 +2,7 @@
 /* HERO SECTION */
 #hero-image{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ted-hero-banner.jpg");
-    height: 85vh;
+    height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,37 +26,84 @@
 }
 /* Scroll down  div */
 .scroll-to-go-down{
+    opacity: 0; 
+    height: 0vh;
+    width: 0;
+}
+/* PRESENTATION */
+#our-story{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 15vh;
-    background-color: #4f934f;
-    color: #fff;
-    font-weight: 600;
-    text-align: center;
-
+    height: 20vh;
     padding: 1rem;
-    
+    margin-bottom: 1rem;
 }
-#btn-scroll-down{
-    width: 10rem;
+#our-story h2{
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 20px;
+}
+#our-story h2 span{
+    color: black;
+}
+#our-story p{
+    align-self: flex-start;
+    background-color: rgba(255, 255, 255, 0.527);
+    
+    color: var(--secondary);
+    margin-top: 1rem;
     padding: 0.5rem;
-    margin: 1.5rem 0 1rem 0;
-    border: none;
-    border-radius: 5px;
-
+    width: 100%;
+    word-wrap: normal;
+}
+#our-story p img{
+    width: 8rem;
 }
 @media (min-width: 799px) {
     header nav {
         background-color: rgba(255, 255, 255, 0.623);
     }
+    /* HERO SECTION */
     #hero-image{
         align-items: center;
     }
     .hero-text{
         max-width: 80%;
         margin: 0 6rem;
+    }
+    /* SCROLL DOWN */
+    .scroll-to-go-down{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: auto;
+        height: 20vh;
+        background-color: #4f934f;
+        color: #fff;
+
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.5rem;
+        letter-spacing: 0.2rem;
+    
+        padding: 1rem;
+        transition: 1s;
+        opacity: 1;;
+    }
+    #btn-scroll-down{
+        width: 10rem;
+        padding: 0.5rem;
+        margin-top: 1rem;
+        border: none;
+        border-radius: 5px;
+        color: #4f934f;
+        font-weight: 800;
+        font-size: 15px;
     
     }
 }
