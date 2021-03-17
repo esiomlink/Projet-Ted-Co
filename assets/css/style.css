@@ -195,11 +195,15 @@ footer {
     height: 0;
     width: 0;
   }
+ 
   header nav {
-    background-color: transparent;
-    box-shadow: none;
-    opacity: 1;
-    top: 0;
+      background: linear-gradient(180deg, 
+      rgba(255,255,255,1) 0%,
+      rgba(255,255,255,0.4598039899553571) 75%, 
+      rgba(0,0,0,0) 100%);
+      box-shadow: none;
+      opacity: 1;
+      top: 0;
   }
   header nav.scroll {
     background-color: rgb(255, 255, 255);
