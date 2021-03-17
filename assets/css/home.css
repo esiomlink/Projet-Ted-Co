@@ -62,12 +62,6 @@
     width: 8rem;
 }
 @media (min-width: 799px) {
-    header nav {
-        background: linear-gradient(180deg, 
-        rgba(255,255,255,1) 0%,
-        rgba(255,255,255,0.4598039899553571) 75%, 
-        rgba(0,0,0,0) 100%);
-    }
     /* HERO SECTION */
     #hero-image{
         align-items: center;
