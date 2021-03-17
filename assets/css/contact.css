@@ -8,7 +8,7 @@
     width: 100%;
     height: 400px;
     background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.082)),
+    linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.11)),
     url(/assets/img/poker.jpg);
     background-size: cover;
     background-position: bottom;
@@ -20,7 +20,7 @@
 }
 
 .parallax p{
-    font-size: 15px;
+    font-size: 0.9rem;
     color:white;
     line-height: 150%;
     font-weight: bold;
@@ -28,7 +28,7 @@
 }
 .parallax span{
     display: block;
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 150%;
     font-weight: bold;
     color:white;
@@ -36,29 +36,29 @@
 }
 @media (min-width: 425px) {
     .parallax p{
-        font-size: 20px;
+        font-size: 1.2rem;
     }
     .parallax span{
-        font-size: 20px;
+        font-size: 1.2rem;
     }
 
 }
 @media (min-width: 625px) {
     .parallax p{
-        font-size: 30px;
+        font-size: 1.7rem;
     }
     .parallax span{
-        font-size: 30px;
+        font-size: 1.7rem;
     }
 
 }
 
 @media (min-width: 768px) {
     .parallax p{
-        font-size: 35px;
+        font-size: 2rem;
     }
     .parallax span{
-        font-size: 35px;
+        font-size: 2rem;
     }
 
 }
@@ -71,7 +71,7 @@
 }
 #tarifs h1{
     text-align: center;
-    font-size: 45px;
+    font-size: 35px;
     color:var(--primary);
     line-height: 150%;
     font-weight: bold;
@@ -93,4 +93,58 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     transition: all o.2s ease-in-out;
     position: relative;
+    z-index: 0;
+    
+}
+.carte-tarif:hover{
+    transform: translateY(-5px);
+}
+.carte-tarif h4{
+    text-align: center;
+    padding: 25px 20px ;
+    font-size: 35px;
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+    background:var(--primary);
+}
+.carte-tarif span{
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.carte-tarif:nth-child(2) h4{
+    background:var(--secondary) ;
+}
+.carte-tarif:nth-child(3) h4{
+    background: var(--closeButton);
+}
+.carte-tarif p{
+    font-size: 18px;
+    padding: 20px 10px;
+    border-top: 1px solid rgb(194, 197, 194);
+}
+.carte-tarif p:last-of-type{
+    border-bottom: 1px solid  rgb(194, 197, 194);
+}
+.carte-tarif p:nth-child(odd){
+    background: rgba(195,195,195,0.219);
+}
+.carte-tarif a {
+    display: block;
+    text-decoration: none;
+    border: 1px solid #333;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 9999px;
+    color: #333;
+    font-size: 18px;
+    line-height: 50px;
+    margin: 20px auto;
+    transition: all 0.2 ease-in-out;
+}
+.carte-tarif a:hover{
+    background: #333;
+    color: #f1f1f1;
 }
