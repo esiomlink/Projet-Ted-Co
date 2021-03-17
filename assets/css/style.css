@@ -26,6 +26,7 @@ a {
   color: rgba(0, 0, 0, 0.801);
   text-decoration: none;
 }
+
 /* HEADER + NAV */
 #logo-smartphone {
   cursor: pointer;
@@ -102,6 +103,7 @@ header nav {
   transition: all 350ms ease-in-out;
   top: -250px;
   width: 100%;
+  z-index: 2;
 }
 header nav.show {
   opacity: 1;
