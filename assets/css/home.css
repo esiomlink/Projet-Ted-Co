@@ -1,31 +1,62 @@
 @import url("style.css");
-
+/* HERO SECTION */
 #hero-image{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ted-hero-banner.jpg");
-    height: 80vh;
+    height: 85vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
 }
 .hero-text{
     max-width: 80%;
-    margin: 0 6rem;
+    margin: 10rem 3rem;
 
 }
 .hero-text h1{
-    font-size: 36px;
+    font-size: 34px;
     color: #fff;
     font-weight: 700;
 
     letter-spacing: 0.1rem;
     line-height: 3rem;
 }
+/* Scroll down  div */
+.scroll-to-go-down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background-color: #4f934f;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
 
+    padding: 1rem;
+    
+}
+#btn-scroll-down{
+    width: 10rem;
+    padding: 0.5rem;
+    margin: 1.5rem 0 1rem 0;
+    border: none;
+    border-radius: 5px;
+
+}
 @media (min-width: 799px) {
     header nav {
         background-color: rgba(255, 255, 255, 0.623);
+    }
+    #hero-image{
+        align-items: center;
+    }
+    .hero-text{
+        max-width: 80%;
+        margin: 0 6rem;
+    
     }
 }
