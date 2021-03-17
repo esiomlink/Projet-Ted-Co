@@ -17,8 +17,8 @@
 
 }
 .hero-text h1{
-    font-size: 34px;
-    color: #fff;
+    font-size: 2rem;
+    color: var(--whiteText);
     font-weight: 700;
 
     letter-spacing: 0.1rem;
@@ -43,7 +43,7 @@
 #our-story h2{
     color: var(--primary);
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 #our-story h2 span{
     color: black;
@@ -63,7 +63,10 @@
 }
 @media (min-width: 799px) {
     header nav {
-        background-color: rgba(255, 255, 255, 0.623);
+        background: linear-gradient(180deg, 
+        rgba(255,255,255,1) 0%,
+        rgba(255,255,255,0.4598039899553571) 75%, 
+        rgba(0,0,0,0) 100%);
     }
     /* HERO SECTION */
     #hero-image{
@@ -85,7 +88,7 @@
         background-color: #4f934f;
         color: #fff;
 
-        font-size: 20px;
+        font-size: 1.3rem;
         font-weight: 600;
         text-align: center;
         line-height: 1.5rem;
@@ -103,7 +106,7 @@
         border-radius: 5px;
         color: #4f934f;
         font-weight: 800;
-        font-size: 15px;
+        font-size: 1rem;
     
     }
 }
