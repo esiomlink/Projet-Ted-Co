@@ -1,1 +1,31 @@
 @import url("style.css");
+
+#hero-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ted-hero-banner.jpg");
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.hero-text{
+    max-width: 80%;
+    margin: 0 6rem;
+
+}
+.hero-text h1{
+    font-size: 36px;
+    color: #fff;
+    font-weight: 700;
+
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+}
+
+@media (min-width: 799px) {
+    header nav {
+        background-color: rgba(255, 255, 255, 0.623);
+    }
+}
