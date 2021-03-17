@@ -27,13 +27,6 @@ a {
   text-decoration: none;
 }
 
-/* A VIRER QUAND ON AURA LE CONTENU */
-.lorem {
-  min-height: 80vh;
-  background-color: rgb(70, 70, 126);
-  width: 100%;
-}
-/* A VIRER QUAND ON AURA LE CONTENU */
 
 /* HEADER + NAV */
 #logo-smartphone {
