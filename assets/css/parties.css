@@ -1,0 +1,120 @@
+@import url("style.css");
+.card-parties-wrapper{
+    text-align: center;
+    min-height: 400px;
+}
+.card-party-set{
+  
+  margin : 5px;
+  color : var(--primary);
+  padding:5px;
+  border-radius : 5px;
+}
+.card-party-photo{
+    padding: 0.5em;
+    max-width: 50%;
+    border-radius: 15px 15px 0 0;
+}
+.card-party-block{
+
+}
+.card-party-text{
+    padding: 0.5em;
+    font-size:1rem;
+    color:black;
+}
+.card-party-title{
+    text-align: center;
+    font-weight: bold;
+    font-size:2rem;
+    padding: 0.5em;
+    background-color:var(--secondaryBis);
+    border-radius:0 0 15px 15px ;
+}
+.parallax{
+  width:100%;
+  height:400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.11)),
+  url(../img/parties/soiree.jpg);
+  background-attachment:fixed;
+  background-size:cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction :column;
+  color : white;
+  font-weight: bold;
+  font-size : 2rem;
+  
+}
+#party-photo{
+  align-content: center;
+  border-radius:15px 15px 0 0;
+  
+}
+
+@media screen and (max-width: 799px) {
+  #party-photo{
+    width:100%;
+  }
+  .card-parties-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+  }
+  .card-parties-all{
+    grid-template-columns: 100%;
+  }
+  .card-party-set{
+    display: grid;
+    text-align: center;
+    width:100%;
+    align-items: center;
+  }
+  .card-party-title{
+    width : 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 800px) {
+#party-photo{
+  width:500px;
+}
+  .card-parties-all{
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  .card-party-set{
+    display: flex;
+    text-align: center;
+    min-height: 400px;
+    align-content:space-around;
+    align-items: center;
+    justify-content: space-evenly;   
+  }
+  .left-party{
+    flex-direction : row;
+  }
+  .right-party{
+    flex-direction : row-reverse;
+  }
+  .card-party-photo{
+    min-width : 60%;
+  }
+  .card-party-title{
+    text-align: center;
+    font-weight: bold;
+  }
+  .card-party-text{
+    width:35%;
+  }
+  #party-block-1{
+
+
+  }
+  #party-block-2{
+
+
+  }
+}
