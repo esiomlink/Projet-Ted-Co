@@ -1,7 +1,7 @@
 @import "style.css";
 
 .header-banner {
-  max-height: 500px;
+  max-height: 400px;
   object-position: 100% 0%;
 }
 h1 {
