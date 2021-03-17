@@ -1,0 +1,87 @@
+@import "style.css";
+
+.header-banner {
+  max-height: 400px;
+  object-position: 100% 0%;
+}
+h1 {
+  color: var(--primary);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 3rem 0;
+  text-align: center;
+}
+.cards-aboutUs {
+  padding: 1rem 2rem;
+  width: 100%;
+}
+.card-aboutUs-right {
+  background-color: var(--primary);
+  border-radius: 10px;
+  box-shadow: 0 3px 6px grey;
+  color: var(--whiteText);
+  margin-left: auto;
+  margin-bottom: 2rem;
+  padding: 2.5rem 2rem;
+  position: relative;
+  width: 80%;
+  z-index: -1;
+}
+.card-aboutUs-left {
+  background-color: var(--primaryHover);
+  border-radius: 10px;
+  box-shadow: 0 3px 6px grey;
+  color: var(--whiteText);
+  margin-right: auto;
+  margin-bottom: 2rem;
+  padding: 2.5rem 2rem;
+  position: relative;
+  width: 80%;
+  z-index: -1;
+}
+.picture-right {
+  background-image: url(../img/antho.jfif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 3px solid var(--primaryHover);
+  border-radius: 50%;
+  height: 70px;
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  width: 70px;
+}
+.picture-left {
+  background-image: url(../img/antho.jfif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 3px solid var(--primary);
+  border-radius: 50%;
+  height: 70px;
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 70px;
+}
+.comment {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.comment span {
+  margin-right: 0.5rem;
+}
+.stars-comment img {
+  height: 15px;
+  width: 15px;
+}
+.date {
+  display: inline-block;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 799px) {
+  h1 {
+    font-size: 2rem;
+  }
+}

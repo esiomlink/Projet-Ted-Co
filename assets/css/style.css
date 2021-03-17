@@ -27,14 +27,6 @@ a {
   text-decoration: none;
 }
 
-/* A VIRER QUAND ON AURA LE CONTENU */
-.lorem {
-  min-height: 80vh;
-  background-color: rgb(70, 70, 126);
-  width: 100%;
-}
-/* A VIRER QUAND ON AURA LE CONTENU */
-
 /* HEADER + NAV */
 #logo-smartphone {
   cursor: pointer;
@@ -111,6 +103,7 @@ header nav {
   transition: all 350ms ease-in-out;
   top: -250px;
   width: 100%;
+  z-index: 2;
 }
 header nav.show {
   opacity: 1;
@@ -202,11 +195,15 @@ footer {
     height: 0;
     width: 0;
   }
+ 
   header nav {
-    background-color: transparent;
-    box-shadow: none;
-    opacity: 1;
-    top: 0;
+      background: linear-gradient(180deg, 
+      rgba(255,255,255,1) 0%,
+      rgba(255,255,255,0.4598039899553571) 75%, 
+      rgba(0,0,0,0) 100%);
+      box-shadow: none;
+      opacity: 1;
+      top: 0;
   }
   header nav.scroll {
     background-color: rgb(255, 255, 255);
