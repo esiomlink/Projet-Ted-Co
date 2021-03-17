@@ -84,6 +84,9 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+
+
 /* *****MINI CARTE****** */
 .minicarte1{
     width: 350px;
@@ -177,6 +180,50 @@
 
 
 
+/* ****VISIBLE INVISIBLE******** */
+.carte1.is-visible{
+    display: block;
+}
+.carte1.is-invisible{
+    display:none;
+}
+.minicarte1.is-invisible{
+    display:none;
+}
+.minicarte1.is-visible{
+    display: block;
+}
+
+.carte2.is-visible{
+    display: block;
+}
+.carte2.is-invisible{
+    display:none;
+}
+.minicarte2.is-invisible{
+    display:none;
+}
+.minicarte2.is-visible{
+    display: block;
+}
+
+
+.carte3.is-visible{
+    display: block;
+}
+.carte3.is-invisible{
+    display:none;
+}
+.minicarte3.is-invisible{
+    display:none;
+}
+.minicarte3.is-visible{
+    display: block;
+}
+
+
+
+
 
 
 
@@ -192,7 +239,6 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     transition: all o.2s ease-in-out;
     position: relative;
-
     z-index: 0;
     
 }
@@ -248,15 +294,16 @@
     background: #333;
     color: #f1f1f1;
 }
-div.carte1{
+.carte1{
     display :none;
 }
-div.carte2{
+.carte2{
     display :none;
 }
-div.carte3{
+.carte3{
     display :none;
 }
+
 
 
 
@@ -282,4 +329,5 @@ div.carte2{
 div.carte3{
     display :block;
 }
+
 }
