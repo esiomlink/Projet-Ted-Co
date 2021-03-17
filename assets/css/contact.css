@@ -21,7 +21,7 @@
 
 .parallax p{
     font-size: 15px;
-    color:var(--primary);
+    color:white;
     line-height: 150%;
     font-weight: bold;
     
@@ -31,7 +31,7 @@
     font-size: 15px;
     line-height: 150%;
     font-weight: bold;
-    color:var(--primary);
+    color:white;
     
 }
 @media (min-width: 425px) {
@@ -40,6 +40,15 @@
     }
     .parallax span{
         font-size: 20px;
+    }
+
+}
+@media (min-width: 625px) {
+    .parallax p{
+        font-size: 30px;
+    }
+    .parallax span{
+        font-size: 30px;
     }
 
 }
@@ -54,3 +63,34 @@
 
 }
 
+  /*********TARIFS CARDS****** */ 
+
+  #tarifs{
+    padding-bottom: 150px;
+    border-bottom: 1px dashed #333;
+}
+#tarifs h1{
+    text-align: center;
+    font-size: 45px;
+    color:var(--primary);
+    line-height: 150%;
+    font-weight: bold;
+    margin: 50px 0 20px;
+    padding: 0 30px;
+}
+
+.tarifs-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.carte-tarif{
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+    margin: 15px 15px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: all o.2s ease-in-out;
+    position: relative;
+}
