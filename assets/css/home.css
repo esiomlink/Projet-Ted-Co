@@ -36,9 +36,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 20vh;
+    height: auto;
     padding: 1rem;
-    margin-bottom: 1rem;
 }
 #our-story h2{
     color: var(--primary);
@@ -64,8 +63,8 @@
 /* Our Team */
 #team{
     padding: 4rem 1rem 1rem 1rem;
-    height: 80vh;
     margin: 1rem;
+    height:auto;
 
     display: flex;
     flex-direction: column;
