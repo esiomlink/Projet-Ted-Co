@@ -413,7 +413,7 @@ textarea{
     list-style-type: none;
     color: #484848;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 0.9em;
     letter-spacing: 15px;
     animation: flash 1.4s linear infinite;
 }
@@ -462,6 +462,26 @@ textarea{
     animation-delay: 0.9s;
 }
 
+@media (min-width: 425px) {
+    .light-title ul li{
+        font-size: 1.1rem;
+    }
+
+
+}
+@media (min-width: 625px) {
+    .light-title ul li{
+        font-size: 1.7rem;
+    }
+ 
+
+}
+
+@media (min-width: 768px) {
+    .light-title ul li{
+        font-size: 2rem;
+    }
+}
 /* ********** CHECKBOX**********/
 
 .check{
@@ -472,3 +492,34 @@ textarea{
     border-radius: 9999px;
     padding: 30px ;
 }
+input[type="checkbox"]{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    -webkit-appearance:none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    /* transition: .5s; */
+}
+input:checked[type="checkbox"]{
+    background: var(--primary);
+}
+input[type="checkbox"]::before{
+    content:'';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 20px;
+    top: 0;
+    left:0;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: .5s;
+
+}
+input:checked[type="checkbox"]::before{
+    left: 20px;
+};
