@@ -67,7 +67,7 @@
 
   #tarifs{
     padding-bottom: 150px;
-    border-bottom: 1px dashed #333;
+    border-bottom: 1px solid #333;
 }
 #tarifs h1{
     text-align: center;
@@ -83,6 +83,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
 
@@ -222,13 +223,6 @@
 }
 
 
-
-
-
-
-
-
-
 /* *******GRANDE CARTE********* */
 .carte-tarif{
     width: 350px;
@@ -240,10 +234,8 @@
     transition: all o.2s ease-in-out;
     position: relative;
     z-index: 0;
+    padding-bottom: 1px;
     
-}
-.carte-tarif:hover{
-    transform: translateY(-5px);
 }
 .carte-tarif h4{
     text-align: center;
@@ -276,6 +268,9 @@
 .carte-tarif p:nth-child(odd){
     background: rgba(195,195,195,0.219);
 }
+.carte3 a{
+    margin-bottom: 120px  ;
+}
 .carte-tarif a {
     display: block;
     text-decoration: none;
@@ -287,11 +282,15 @@
     color: #333;
     font-size: 18px;
     line-height: 50px;
-    margin: 20px auto;
-    transition: all 0.2 ease-in-out;
+    margin: 20px auto ;
+    cursor: pointer;
+    background-image: linear-gradient(to right, transparent 50%, rgb(65,65,65) 50%, rgb(134,134,134));
+    background-size: 200%;
+    transition: all 0.4s ease-in-out;
 }
 .carte-tarif a:hover{
-    background: #333;
+    
+    background-position: 100%;
     color: #f1f1f1;
 }
 .carte1{
@@ -303,12 +302,6 @@
 .carte3{
     display :none;
 }
-
-
-
-
-
-
 
 @media (min-width: 768px) {
     .minicarte1{
@@ -330,4 +323,152 @@ div.carte3{
     display :block;
 }
 
+}
+
+
+/* *******CONTACT****** */
+.section-contact{
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.section-contact h2{
+    text-align: center;
+    color: #333;
+    font-size: 48px;
+    font-weight: 400px;
+    margin-bottom: 50px;
+    padding: 70px 0 0 0;
+}
+.container-form{
+    margin: 0 auto;
+    width: 70%;
+}
+.form-groupe{
+    position: relative;
+    margin-bottom: 45px;
+}
+.form-groupe label{
+    color: rgb(58, 55, 55);
+    font-size: 20px;
+    font-weight: bold
+}
+.form-groupe input{
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid #aaa;
+    color: #666;
+    font-size: 20px;
+}
+textarea{
+    width: 100%;
+    height: 200px;
+    border: none;
+    border: 3px solid #aaa;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    font-size: 20px;
+    background: #f1f1f1;
+}
+.form-groupe:nth-child(4){
+    margin-bottom: 25px;
+}
+.form-groupe .button-sub {
+    display: block;
+    width: auto;
+    padding: 15px 60px;
+    border: 3px solid rgb(144,144,144);
+    border-radius: 9999px;
+    background-image: linear-gradient(to right, transparent 50%, rgb(65,65,65) 50%, rgb(134,134,134));
+    background-size: 200%;
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.form-groupe .button-sub:hover {
+    color: #fff;
+    background-position: 100%;
+    border: 3px solid #fff;
+}
+
+
+
+/* **********light title******* */
+
+.light-title ul{
+    width: 100%;
+    text-align: center;
+    /* position: absolute; */
+    top: 30%;
+}
+.light-title ul li{
+    
+    display: inline-block;
+    list-style-type: none;
+    color: #484848;
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 15px;
+    animation: flash 1.4s linear infinite;
+}
+
+@keyframes flash {
+    0%{
+        color:#484848;
+        text-shadow: none;
+    }
+    90%{
+        color: #484848;
+        text-shadow: none;
+    }
+    100%{
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+    }
+
+}
+
+.light-title ul li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.light-title ul li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.light-title ul li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.light-title ul li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.light-title ul li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+.light-title ul li:nth-child(6) {
+    animation-delay: 0.6s;
+}
+.light-title ul li:nth-child(7) {
+    animation-delay: 0.7s;
+}
+.light-title ul li:nth-child(8) {
+    animation-delay: 0.8s;
+}
+.light-title ul li:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+/* ********** CHECKBOX**********/
+
+.check{
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid;
+    border-radius: 9999px;
+    padding: 30px ;
 }
