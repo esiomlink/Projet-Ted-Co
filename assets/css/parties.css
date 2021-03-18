@@ -3,6 +3,7 @@
   padding:0;
   margin:0;
 }
+
 .cards-parties-title h1{
     text-align: center;
     font-size: 35px;
@@ -12,8 +13,8 @@
     margin: 50px 0 20px;
     padding: 0 30px;
 }
-}
 .cards-parties-wrapper{
+
     text-align: center;
     min-height: 400px;
     margin-top:50px;
@@ -34,6 +35,7 @@
     border-radius: 15px 15px 0 0;
    }
 .card-party-block{
+  
   border-radius:25px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
@@ -113,10 +115,12 @@
   }
 }
 @media screen and (min-width: 800px) {
+
   #party-photo{
     width:500px;
   }
 .card-parties-all{
+
     grid-template-columns: 1fr 2fr 1fr;
   }
   .card-party-set{
