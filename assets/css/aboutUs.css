@@ -13,6 +13,7 @@ h1 {
 }
 .cards-aboutUs {
   padding: 1rem 2rem;
+  margin: 1rem 0;
   width: 100%;
 }
 .card-aboutUs-right {
@@ -21,7 +22,7 @@ h1 {
   box-shadow: 0 3px 6px grey;
   color: var(--whiteText);
   margin-left: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   padding: 2.5rem 2rem;
   position: relative;
   width: 80%;
@@ -33,7 +34,7 @@ h1 {
   box-shadow: 0 3px 6px grey;
   color: var(--whiteText);
   margin-right: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   padding: 2.5rem 2rem;
   position: relative;
   width: 80%;
@@ -81,7 +82,24 @@ h1 {
 }
 
 @media (min-width: 799px) {
+  .cards-aboutUs {
+    padding: 1rem 2rem;
+    margin: 2rem auto;
+    width: 80%;
+  }
   h1 {
     font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .card-aboutUs-right {
+    margin-left: auto;
+    width: 60%;
+    z-index: -1;
+  }
+  .card-aboutUs-left {
+    margin-right: auto;
+    width: 60%;
+    z-index: -1;
   }
 }
