@@ -259,10 +259,10 @@
     font-size: 25px;
     font-weight: bold;
 }
-.carte-tarif:nth-child(2) h4{
+.carte2 h4{
     background:var(--secondary) ;
 }
-.carte-tarif:nth-child(3) h4{
+.carte3 h4{
     background: var(--closeButton);
 }
 .carte-tarif p{
