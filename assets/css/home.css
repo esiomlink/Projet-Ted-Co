@@ -47,7 +47,7 @@
 #our-story h2{
     color: var(--primary);
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
 #our-story p{
     background-color: rgba(255, 255, 255, 0.527);
@@ -76,7 +76,7 @@
 #team h2{
     color: var(--primary);
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
 }
 #card-grid{
