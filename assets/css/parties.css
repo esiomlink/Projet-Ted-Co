@@ -3,9 +3,9 @@
   padding: 0;
   margin: 0;
 }
-.navOurWork {
-  border-bottom: 2px solid var(--primary);
-}
+
+
+
 .cards-parties-title h1 {
   text-align: center;
   font-size: 35px;
@@ -127,6 +127,9 @@
 @media screen and (min-width: 800px) {
   #party-photo {
     width: 500px;
+  }
+  .navOurWork {
+    border-bottom: 2px solid var(--primary);
   }
   .card-parties-all {
     grid-template-columns: 1fr 2fr 1fr;
