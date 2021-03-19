@@ -158,7 +158,7 @@ header nav a:active {
 
 /* ***** FOOTER ****** */
 footer {
-  background-color: rgb(200, 200, 200); /* temp */
+  background-color: var(--primary); /* temp */
   bottom: 0;
   position: relative;
   width: 100%;
