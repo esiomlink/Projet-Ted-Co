@@ -327,6 +327,20 @@ div.carte3{
 
 
 /* *******CONTACT****** */
+.section-contact h1{
+
+    text-align: center;
+    font-size: 35px;
+    color:var(--primary);
+    line-height: 150%;
+    font-weight: bold;
+    margin: 50px 0 40px;
+    padding: 0 30px;
+}
+
+
+
+
 .section-contact{
     margin-top: 50px;
     padding-bottom: 100px;
@@ -473,8 +487,8 @@ textarea{
     .light-title ul li{
         font-size: 1.7rem;
     }
- 
-
+    
+    
 }
 
 @media (min-width: 768px) {
@@ -483,6 +497,12 @@ textarea{
     }
 }
 /* ********** CHECKBOX**********/
+.label{
+   
+    font-size: 1rem;
+    color:var(--primary);
+    font-weight: bold;
+}
 
 .check{
     margin: 40px auto;
@@ -501,7 +521,7 @@ input[type="checkbox"]{
     outline: none;
     border-radius: 20px;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-    /* transition: .5s; */
+ 
 }
 input:checked[type="checkbox"]{
     background: var(--primary);
@@ -523,6 +543,8 @@ input[type="checkbox"]::before{
 input:checked[type="checkbox"]::before{
     left: 20px;
 };
+
+
 
 
 @media (min-width: 425px) {
