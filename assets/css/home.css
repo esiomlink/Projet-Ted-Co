@@ -38,7 +38,7 @@
 #our-story{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     height: auto;
     padding: 1rem 1rem 0rem 1rem;
@@ -50,14 +50,13 @@
     font-size: 1.3rem;
 }
 #our-story p{
-    align-self: flex-start;
     background-color: rgba(255, 255, 255, 0.527);
     font-weight: 600;
     
     color: black;
     margin-top: 1rem;
     padding: 0.5rem;
-    width: 100%;
+    width: 80%;
     word-wrap: normal;
 }
 #our-story p img{
