@@ -117,7 +117,7 @@ h1 {
   cursor: pointer;
 }
 .insultButton:active {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 @media (min-width: 799px) {
   .cards-aboutUs {
