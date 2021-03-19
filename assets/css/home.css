@@ -53,7 +53,7 @@
     background-color: rgba(255, 255, 255, 0.527);
     font-weight: 600;
     
-    color: var(--secondary);
+    color: black;
     margin-top: 1rem;
     padding: 0.5rem;
     width: 100%;
@@ -115,6 +115,7 @@
 }
 .underline-txt{
     text-decoration: underline ;
+    font-weight: 700;
 }
 .card-home p{
     padding: 1rem;
