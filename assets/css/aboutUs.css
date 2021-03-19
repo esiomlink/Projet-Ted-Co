@@ -120,6 +120,12 @@ h1 {
   transform: scale(0.95);
 }
 @media (min-width: 799px) {
+  .navAboutUs {
+    border-bottom: 2px solid var(--primary);
+  }
+  header nav a {
+    margin: 0;
+  }
   .cards-aboutUs {
     padding: 1rem 2rem;
     margin: 2rem auto;
