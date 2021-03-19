@@ -96,7 +96,7 @@
     background: url(../img/svg.png) no-repeat ;
     background-size: 350px 200px;
     
-    
+
 }
 .card-home img{
     height: 100px;
@@ -136,8 +136,8 @@
 
         width: auto;
         height: auto;
-        background-color: #4f934f;
-        color: #fff;
+        background-color: var(--primary);
+        color: var(--whiteText);
 
         font-size: 1.3rem;
         font-weight: 600;
@@ -155,9 +155,10 @@
         margin-top: 1rem;
         border: none;
         border-radius: 5px;
-        color: #4f934f;
         font-weight: 800;
         font-size: 1rem;
-    
     }
-}
+    #btn-scroll-down:hover{
+        background-color:var(--primaryHover);
+        color: var(--whiteText);
+    }
