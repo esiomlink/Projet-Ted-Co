@@ -1,15 +1,22 @@
-    const name = ["Ted, your ", "Teddy, I think your ", "Mr Bear, everyone tells that your ", "Ted&Co\'s "];
-    const first = ["face ", "nose ", "hair ", "ear ", "left foot "];
-    const second = ["smelly ", "boring ", "stupid ", "fat ", "ugly "];
-    const third = ["fly !", "rat !", "shoe !", "goose !", "donkey !"];
-    
-    let  rig = (n, f, s, t) => n[randomize(n.length)]+ f[randomize(f.length)]+ "is just like a " + s[randomize(s.length)]+ t[randomize(t.length) ];
-
-    function randomize(b) {
-	//returning a random integer between a and b
-	return Math.trunc(Math.random() * (b));
-    }
-
-    //console.log(rig(name,first,second,third));
-    const rigHTML = document.getElementById('insult');
-    for (i=0;i<3;++i){rigHTML.innerHTML += rig(name,first,second,third) + "</br>";}
+const first = [
+    "Ted, your services are the worst on the entire planet ! ",
+    "I hoped to get an incredible service, I wasn't disappointed (it's a little bit ironic...) ! ",
+    ""
+];
+const second = [
+    "I paid for a premium package, called \"Fantastic Party\" but I'm still waiting for my event. ",
+    "My wife and I were not satisfied at all, these weirdos are crazy ! "
+];
+const third = [
+    "I swear, this is the first and the last time I'll call them ! ",
+    "They took your greenback and they'll never go back... "
+];
+const fourth = [
+    "Don't spend any money for these bears, they'll steal your money !!",
+    "Seriously, guys... Run away from these dumbs bears."
+];
+let rig = (a, b, c, d) => a[randomize(a.length)] + b[randomize(b.length)] + c[randomize(c.length)] + d[randomize(d.length)];
+function randomize(b) {
+    return Math.trunc(Math.random() * (b));
+}
+console.log(rig(first,second,third,fourth));
