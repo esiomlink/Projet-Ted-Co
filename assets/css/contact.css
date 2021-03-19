@@ -396,7 +396,7 @@ textarea{
     background-image: linear-gradient(to right, transparent 50%, rgb(65,65,65) 50%, rgb(134,134,134));
     background-size: 200%;
     color: #333;
-    font-size: 24px;
+    font-size: 1.1rem;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
@@ -405,6 +405,13 @@ textarea{
     color: #fff;
     background-position: 100%;
     border: 3px solid #fff;
+}
+@media (min-width: 625px) {
+    .form-groupe .button-sub{
+        font-size: 1.7rem;
+    }
+    
+    
 }
 
 
@@ -495,8 +502,7 @@ textarea{
 }
 /* ********** CHECKBOX**********/
 .label{
-    left: 20px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color:var(--primary);
     font-weight: bold;
     text-align: center;
@@ -512,7 +518,6 @@ textarea{
     padding: 30px ;
 }
 input[type="checkbox"]{
-    left: 12px;
     position: relative;
     width: 40px;
     height: 20px;
@@ -550,7 +555,7 @@ input:checked[type="checkbox"]::before{
 
 @media (min-width: 425px) {
     .label{
-        
+        font-size: 1.1rem;
     }
     input[type="checkbox"]{
         width: 45px;
@@ -568,6 +573,9 @@ input:checked[type="checkbox"]::before{
 
 }
 @media (min-width: 625px) {
+    .label{
+        font-size: 1.3rem;
+    }
     input[type="checkbox"]{
         width: 50px;
         height: 25px;
@@ -584,6 +592,9 @@ input:checked[type="checkbox"]::before{
 }
 
 @media (min-width: 768px) {
+    .label{
+        font-size: 1.5rem;
+    }
     input[type="checkbox"]{
         width: 55px;
         height: 30px;
