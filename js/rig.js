@@ -38,13 +38,7 @@ const textInsultThree = document.querySelector(".text-insult-card-3");
 const textInsultFour = document.querySelector(".text-insult-card-4");
 const insultButton = document.querySelector(".insult-button-container");
 const dates = document.querySelectorAll(".date");
-let dateLocale = new Date().toLocaleString("fr-FR", {
-    year: "numeric",
-    month: "2-digit",
-    day: "numeric",
-    hour: "numeric",
-    minute: "numeric",
-    second: "numeric"});
+
 
 insultButton.addEventListener("click", function(e) {
     e.preventDefault()
@@ -52,6 +46,13 @@ insultButton.addEventListener("click", function(e) {
     textInsultTwo.innerHTML = rig(first,second,third,fourth);
     textInsultThree.innerHTML = rig(first,second,third,fourth);
     textInsultFour.innerHTML = rig(first,second,third,fourth);
+    let dateLocale = new Date().toLocaleString("fr-FR", {
+        year: "numeric",
+        month: "2-digit",
+        day: "numeric",
+        hour: "numeric",
+        minute: "numeric",
+        second: "numeric"});
     dates.forEach(date => {
         date.innerHTML = dateLocale;
     });
