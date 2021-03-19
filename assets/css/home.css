@@ -2,6 +2,7 @@
 .black-lettering{
     color: black;
 }
+
 /* HERO SECTION */
 #hero-image{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ted-hero-banner.jpg");
@@ -125,6 +126,12 @@
     text-align:left;
 }
 @media (min-width: 799px) {
+    .active{
+        border-bottom: var(--primary) solid 2px;
+    }
+    .active:hover{
+        border-bottom: var(--primaryHover) solid 2px;
+    }
     /* HERO SECTION */
     #hero-image{
         align-items: center;
