@@ -1,159 +1,169 @@
 @import url("style.css");
-*{
-  padding:0;
-  margin:0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.cards-parties-title h1{
-    text-align: center;
-    font-size: 35px;
-    color:var(--primary);
-    line-height: 150%;
-    font-weight: bold;
-    margin: 50px 0 20px;
-    padding: 0 30px;
+.cards-parties-title h1 {
+  text-align: center;
+  font-size: 35px;
+  color: var(--primary);
+  line-height: 150%;
+  font-weight: bold;
+  margin: 50px 0 20px;
+  padding: 0 30px;
 }
-.cards-parties-wrapper{
 
-    text-align: center;
-    min-height: 400px;
-    margin-top:50px;
-    margin-bottom:50px;
+.cards-parties-wrapper {
+  text-align: center;
+  min-height: 400px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.card-party-set{
-  margin-left : 5px;
-  margin-right : 5px;
-  margin-top : 25px;
-  margin-bottom:25px;
-  
-  color : var(--primary);
-  border-radius : 5px;
+
+.card-party-set {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: var(--primary);
+  border-radius: 5px;
 }
-.card-party-photo{
-    padding: 0.5em;
-    max-width: 50%;
-    border-radius: 15px 15px 0 0;
-   }
-.card-party-block{
-  
-  border-radius:25px;
+
+.card-party-photo {
+  padding: 0.5em;
+  max-width: 50%;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-party-block {
+  border-radius: 25px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-.card-party-text{
-    padding: 0.5em;
-    font-size:1rem;
-    color:var(--whiteText);
-    padding : 3rem;
-    background-color: var(--primary);
-    width : 100%;
-    height: 100%;
-    border-radius:25px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+
+.card-party-text {
+  padding: 0.5em;
+  font-size: 1rem;
+  color: var(--whiteText);
+  padding: 3rem;
+  background-color: var(--primary);
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-.card-party-title{
-    text-align: center;
-    font-weight: bold;
-    font-size:2rem;
-    padding: 0.5em;
-    background-color:var(--secondaryBis);
-    border-radius:0 0 15px 15px ;
+
+.card-party-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0.5em;
+  background-color: var(--secondaryBis);
+  border-radius: 0 0 15px 15px;
 }
-.parallax{
-  width:100%;
-  height:400px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.11)),
-  url(../img/parties/soiree.jpg);
-  background-attachment:fixed;
-  background-size:cover;
-  display:flex;
+
+.parallax {
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.11)), url(../img/parties/soiree.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction :column;
-  color : white;
+  flex-direction: column;
+  color: white;
   font-weight: bold;
-  font-size : 2rem;
-  
+  font-size: 2rem;
 }
-#party-photo{
+
+.parallax h1 {
+  font-size: 2rem;
+  color: var(--whiteText);
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+}
+
+#party-photo {
   align-content: center;
-  border-radius:15px 15px 0 0;
-  
+  border-radius: 15px 15px 0 0;
 }
 
 @media screen and (max-width: 799px) {
-
-  .card-party-photo{
-    min-width:100%;
-    height:25%;
+  .card-party-photo {
+    min-width: 100%;
+    height: 25%;
   }
-  #party-photo{
-    width:100%;
+  #party-photo {
+    width: 100%;
   }
- 
-  .card-parties-all{
+  .card-parties-all {
     grid-template-columns: 100%;
   }
-  .card-party-set{
+  .card-party-set {
     display: grid;
     text-align: center;
-    width:100%;
+    width: 100%;
     align-items: center;
-    padding:25px;
-
+    padding: 25px;
   }
-  .card-party-title{
-    width : 100%;
+  .card-party-title {
+    width: 100%;
     text-align: center;
     font-weight: bold;
   }
-    .card-party-text{
-    width : 100%;
+  .card-party-text {
+    width: 100%;
     text-align: center;
-    font-weight:normal;
-    margin-top : 25px;
-    height :100%;
+    font-weight: normal;
+    margin-top: 25px;
+    height: 100%;
   }
 }
+
 @media screen and (min-width: 800px) {
-
-  #party-photo{
-    width:500px;
+  #party-photo {
+    width: 500px;
   }
-.card-parties-all{
-
+  .card-parties-all {
     grid-template-columns: 1fr 2fr 1fr;
   }
-  .card-party-set{
+  .card-party-set {
     display: flex;
     text-align: center;
     min-height: 400px;
-    align-content:space-around;
+    align-content: space-around;
     align-items: center;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
   }
-  .left-party{
-    flex-direction : row;
+  .left-party {
+    flex-direction: row;
   }
-  .right-party{
-    flex-direction : row-reverse;
+  .right-party {
+    flex-direction: row-reverse;
   }
-  .card-party-photo{
-    min-width : 60%;
-   
+  .card-party-photo {
+    min-width: 60%;
   }
-  .card-party-title{
+  .card-party-title {
     text-align: center;
     font-weight: bold;
   }
-  .card-party-text{
-    width:45%;
-    height:100%;
-   
+  .card-party-text {
+    width: 45%;
+    height: 100%;
   }
-  #party-block-1{
-    transform:rotate(-2deg);
+  #party-block-1 {
+    transition: all 0.2s ease-in-out;
   }
-  #party-block-2{
-    transform:rotate(2deg);
+  #party-block-1:hover {
+    transform: rotate(-2deg);
+  }
+  #party-block-2 {
+    transition: all 0.2s ease-in-out;
+  }
+  #party-block-2:hover {
+    transform: rotate(2deg);
   }
 }
