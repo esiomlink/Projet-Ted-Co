@@ -109,7 +109,9 @@ h1 {
   border-radius: 5px;
   color: var(--whiteText);
   font-weight: 700;
-  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 1rem 1.5rem;
   transition: 200ms;
 }
 .insultButton:hover {
