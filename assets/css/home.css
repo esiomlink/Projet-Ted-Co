@@ -41,6 +41,7 @@
     align-items: center;
     height: auto;
     padding: 1rem 1rem 0rem 1rem;
+    margin-top: 2rem;
 }
 #our-story h2{
     color: var(--primary);
@@ -52,7 +53,7 @@
     background-color: rgba(255, 255, 255, 0.527);
     font-weight: 600;
     
-    color: var(--secondary);
+    color: black;
     margin-top: 1rem;
     padding: 0.5rem;
     width: 100%;
@@ -70,11 +71,13 @@
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
+    margin-top: 2rem;
 }
 #team h2{
     color: var(--primary);
     font-weight: 600;
     font-size: 1.3rem;
+    margin-bottom: 2rem;
 }
 #card-grid{
     display: flex;
@@ -96,7 +99,7 @@
     background: url(../img/svg.png) no-repeat ;
     background-size: 350px 200px;
     
-    
+
 }
 .card-home img{
     height: 100px;
@@ -112,6 +115,7 @@
 }
 .underline-txt{
     text-decoration: underline ;
+    font-weight: 700;
 }
 .card-home p{
     padding: 1rem;
@@ -127,6 +131,9 @@
         max-width: 80%;
         margin: 0 6rem;
     }
+    .hero-text h1{
+        font-size: 3rem;
+    }
     /* SCROLL DOWN */
     .scroll-to-go-down{
         display: flex;
@@ -136,8 +143,8 @@
 
         width: auto;
         height: auto;
-        background-color: #4f934f;
-        color: #fff;
+        background-color: var(--primary);
+        color: var(--whiteText);
 
         font-size: 1.3rem;
         font-weight: 600;
@@ -155,9 +162,10 @@
         margin-top: 1rem;
         border: none;
         border-radius: 5px;
-        color: #4f934f;
         font-weight: 800;
         font-size: 1rem;
-    
     }
-}
+    #btn-scroll-down:hover{
+        background-color:var(--primaryHover);
+        color: var(--whiteText);
+    }
