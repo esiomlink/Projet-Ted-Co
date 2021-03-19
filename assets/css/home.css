@@ -41,6 +41,7 @@
     align-items: center;
     height: auto;
     padding: 1rem 1rem 0rem 1rem;
+    margin-top: 2rem;
 }
 #our-story h2{
     color: var(--primary);
@@ -70,11 +71,13 @@
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
+    margin-top: 2rem;
 }
 #team h2{
     color: var(--primary);
     font-weight: 600;
     font-size: 1.3rem;
+    margin-bottom: 2rem;
 }
 #card-grid{
     display: flex;
@@ -126,6 +129,9 @@
     .hero-text{
         max-width: 80%;
         margin: 0 6rem;
+    }
+    .hero-text h1{
+        font-size: 3rem;
     }
     /* SCROLL DOWN */
     .scroll-to-go-down{
