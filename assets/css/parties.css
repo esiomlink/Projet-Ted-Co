@@ -3,7 +3,9 @@
   padding: 0;
   margin: 0;
 }
-
+.navOurWork {
+  border-bottom: 2px solid var(--primary);
+}
 .cards-parties-title h1 {
   text-align: center;
   font-size: 35px;
