@@ -13,6 +13,7 @@ h1 {
 }
 .cards-aboutUs {
   padding: 1rem 2rem;
+  margin: 1rem 0;
   width: 100%;
 }
 .card-aboutUs-right {
@@ -21,7 +22,7 @@ h1 {
   box-shadow: 0 3px 6px grey;
   color: var(--whiteText);
   margin-left: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   padding: 2.5rem 2rem;
   position: relative;
   width: 80%;
@@ -33,16 +34,13 @@ h1 {
   box-shadow: 0 3px 6px grey;
   color: var(--whiteText);
   margin-right: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   padding: 2.5rem 2rem;
   position: relative;
   width: 80%;
   z-index: -1;
 }
 .picture-right {
-  background-image: url(../img/antho.jfif);
-  background-size: contain;
-  background-repeat: no-repeat;
   border: 3px solid var(--primaryHover);
   border-radius: 50%;
   height: 70px;
@@ -52,9 +50,6 @@ h1 {
   width: 70px;
 }
 .picture-left {
-  background-image: url(../img/antho.jfif);
-  background-size: contain;
-  background-repeat: no-repeat;
   border: 3px solid var(--primary);
   border-radius: 50%;
   height: 70px;
@@ -62,6 +57,30 @@ h1 {
   top: -25px;
   left: -25px;
   width: 70px;
+}
+.winnie-picture {
+  background-image: url(../img/tedfriendrequest.jpg);
+  background-size: 250%;
+  background-position: 24% 50%;
+  background-repeat: no-repeat;
+}
+.ted-picture {
+  background-image: url(../img/test.jpg);
+  background-size: 200%;
+  background-position: 47% 30%;
+  background-repeat: no-repeat;
+}
+.twinky-picture {
+  background-image: url(../img/ted-hero-banner.jpg);
+  background-size: 250%;
+  background-position: 70% 30%;
+  background-repeat: no-repeat;
+}
+.bubsy-picture {
+  background-image: url(../img/parties/concert.jpg);
+  background-size: 550%;
+  background-position: 42% 0%;
+  background-repeat: no-repeat;
 }
 .comment {
   font-weight: 700;
@@ -79,9 +98,52 @@ h1 {
   font-weight: 700;
   margin-top: 0.5rem;
 }
-
+.insult-button-container {
+  margin: 2rem 0;
+  text-align: center;
+}
+.insultButton {
+  background-color: var(--primary);
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  color: var(--whiteText);
+  font-weight: 700;
+  padding: 0.6rem 1rem;
+  transition: 200ms;
+}
+.insultButton:hover {
+  background-color: var(--primaryHover);
+  cursor: pointer;
+}
+.insultButton:active {
+  transform: scale(0.95);
+}
 @media (min-width: 799px) {
+  .navAboutUs {
+    border-bottom: 2px solid var(--primary);
+  }
+  header nav a {
+    margin: 0;
+  }
+  .cards-aboutUs {
+    padding: 1rem 2rem;
+    margin: 2rem auto;
+    width: 80%;
+  }
   h1 {
     font-size: 2rem;
+  }
+}
+@media (min-width: 1300px) {
+  .card-aboutUs-right {
+    margin-left: auto;
+    width: 60%;
+    z-index: -1;
+  }
+  .card-aboutUs-left {
+    margin-right: auto;
+    width: 60%;
+    z-index: -1;
   }
 }

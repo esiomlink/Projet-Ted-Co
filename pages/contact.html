@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/css/reset.css" />
     <link rel="stylesheet" href="../assets/css/contact.css" />
-
     <script src="../js/app.js" defer></script>
+    <script src="../js/contact-slide.js" defer></script>
+    
     <title>Ted & Co</title>
   </head>
   <body>
@@ -35,8 +36,8 @@
           <ul class="liste-nav">
             <li class="item-nav"><a href="home.html">Home</a></li>
             <li class="item-nav"><a href="parties.html">Our work</a></li>
-            <li class="item-nav"><a href="aboutUs.html">About us</a></li>
-            <li class="item-nav"><a href="contact.html">Contact</a></li>
+            <li class="item-nav"><a href="aboutUs.html">Testimonials</a></li>
+            <li class="item-nav"><a href="contact.html" class="active">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -52,8 +53,14 @@
     <section id="tarifs">
         <h1>Our Prices</h1>
         <div class="tarifs-box">
-            <div class="carte-tarif">
 
+          <div class="minicarte1">
+            <h4>Classic Party</h4>
+            <span>1.000$</span>
+          </div>
+
+          <div class="carte1"> 
+            <div class="carte-tarif">
                 <h4>Classic Party</h4>
 
                 <span>1.000$</span>
@@ -66,11 +73,16 @@
                 <p>❌ ***********</p>
        
                 <a href="#contact">Reserve Now !</a>
-
+              </div>
             </div>
 
-            <div class="carte-tarif">
+            <div class="minicarte2">
+              <h4>Fantastic Party</h4>
+                <span>5.000$</span>
+            </div>
 
+            <div class="carte2">
+            <div class="carte-tarif">
                 <h4>Fantastic Party</h4>
 
                 <span>5.000$</span>
@@ -83,11 +95,16 @@
                 <p>❌ ***********</p>
 
                 <a href="#contact">Reserve Now !</a>
-
+              </div>
+            </div>
+            
+            <div class="minicarte3">
+              <h4>Amazing Party</h4>
+                <span>10.000$</span>
             </div>
 
+            <div class="carte3">
             <div class="carte-tarif">
-
                 <h4>Amazing Party</h4>
 
                 <span>10.000$</span>
@@ -100,12 +117,73 @@
                 <p>✔️ ***********</p>
 
                 <a href="#contact">Reserve Now !</a>
-
+              </div>
             </div>
 
         </div>
     </section>
+    <section class="section-contact" id="contact">
+          <h1>Contact</h1>
+      <div class="container-form">
 
+        <form class="form-bloc">
+
+            <div class="form-groupe">
+                <label for="first-fame">First Name</label>
+                <input type="text" placeholder="Flash" required maxlength="16" id="first-fame">
+            </div>
+            <div class="form-groupe">
+                <label for="last-ame">Last Name</label>
+                <input type="text" placeholder="GORDON" required maxlength="16" id="last-ame">
+            </div>
+            <div class="form-groupe">
+                <label for="e-mail">E-mail</label>
+                <input type="e-mail" placeholder="flash.gordon@email.com"  id="e-mail">
+            </div>
+            <fieldset>
+            <div class="light-title">
+              <ul>
+                <li>Y</li>
+                <li>O</li>
+                <li>U</li>
+                <li>R</li>
+                <li>-</li>
+                <li>C</li>
+                <li>H</li>
+                <li>O</li>
+                <li>I</li>
+                <li>C</li>
+                <li>E</li>
+            </ul>
+            </div>
+            <div class="check">
+              <div>
+                <input type="checkbox" class="checkbox" name="Classic Party" value="Classic Party"></br>
+                <label class="label" for="Classic Party">Classic</label>
+              </div>
+              <div>
+                <input type="checkbox" class="checkbox" name="Fantastic Party" value="Fantastic Party"></br>
+                <label class="label" for="Fantastic Party">Fantastic</label>
+              </div>
+              <div>
+                <input type="checkbox" class="checkbox" name="Amazing Party" value="Amazing Party"></br>
+                <label class="label" for="Amazing Party">Amazing</label>
+              </div>
+            </div>
+            </fieldset>
+            <div class="form-groupe">
+                <textarea id="txt" placeholder="Your message" required></textarea>
+            </div>
+
+            <div class="form-groupe">
+                <input type="submit" value="SEND" class="button-sub">
+            </div>
+
+        </form>
+
+    </div>
+
+    </section>
     
     <div class="go-up-btn">
       <img src="../assets/img/fleche.png" class="icone" alt="scroll up icone" />
