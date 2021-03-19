@@ -54,6 +54,12 @@
 }
 
 @media (min-width: 768px) {
+    .active{
+        border-bottom: var(--primary) solid 2px;
+    }
+    .active:hover{
+        border-bottom: var(--primaryHover) solid 2px;
+    }
     .parallax p{
         font-size: 2rem;
     }
