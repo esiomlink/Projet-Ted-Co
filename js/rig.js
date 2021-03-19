@@ -7,16 +7,25 @@ const first = [
 ];
 const second = [
     "I paid for a premium package, called \"Fantastic Party\" but I'm still waiting for my event. ",
-    "My wife and I were not satisfied at all, these weirdos are crazy ! "
+    "My wife and I were not satisfied at all, these weirdos are crazy ! ",
+    "I don't understand how is it possible to be as dumb as them... ",
+    "",
+    ""
     
 ];
 const third = [
     "I swear, this is the first and the last time I'll call them ! ",
-    "They took your greenback and they'll never go back... "
+    "They took your greenback and they'll never go back... ",
+    "",
+    "",
+    ""
 ];
 const fourth = [
     "Don't spend any money for these bears, they'll steal your money !!",
-    "Seriously, guys... Run away from these dumbs bears."
+    "Seriously, guys... Run away from these dumbs bears.",
+    "The entire staff deserve to be ",
+    "",
+    ""
 ];
 let rig = (a, b, c, d) => a[randomize(a.length)] + b[randomize(b.length)] + c[randomize(c.length)] + d[randomize(d.length)];
 function randomize(b) {
