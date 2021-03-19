@@ -416,6 +416,7 @@ textarea{
 /* **********light title******* */
 
 .light-title ul{
+    margin-top: 40px;
     width: 100%;
     text-align: center;
     top: 30%;
@@ -502,12 +503,14 @@ textarea{
     font-size: 1rem;
     color:var(--primary);
     font-weight: bold;
+    text-align: center;
+    
 }
 
 .check{
     margin: 40px auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border: 1px solid;
     border-radius: 9999px;
     padding: 30px ;
@@ -548,6 +551,9 @@ input:checked[type="checkbox"]::before{
 
 
 @media (min-width: 425px) {
+    .label{
+        padding-top: 20px;
+    }
     input[type="checkbox"]{
         width: 45px;
         height: 23px;
@@ -559,6 +565,7 @@ input:checked[type="checkbox"]::before{
     input:checked[type="checkbox"]::before{
         left: 23px;
     };
+      
 
 
 }
