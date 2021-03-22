@@ -222,4 +222,10 @@ footer {
   nav li {
     margin-right: 1rem;
   }
+  .active {
+    border-bottom: var(--primary) solid 2px;
+  }
+  .active:hover {
+    border-bottom: var(--primaryHover) solid 2px;
+  }
 }
