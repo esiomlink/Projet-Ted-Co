@@ -1,615 +1,471 @@
-@import 'style.css';
-
+@import "style.css";
 
 /*********PARALLAX*******/
 
-
-.parallax{
-    width: 100%;
-    height: 400px;
-    background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.11)),
+.parallax {
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.11)),
     url(../img/poker.jpg);
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.parallax p{
-    font-size: 0.9rem;
-    color:white;
-    line-height: 150%;
-    font-weight: bold;
-    
+.parallax p {
+  font-size: 0.9rem;
+  color: white;
+  line-height: 150%;
+  font-weight: bold;
 }
-.parallax span{
-    display: block;
-    font-size: 1rem;
-    line-height: 150%;
-    font-weight: bold;
-    color:white;
-    
+.parallax span {
+  display: block;
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: bold;
+  color: white;
 }
 @media (min-width: 425px) {
-    .parallax p{
-        font-size: 1.2rem;
-    }
-    .parallax span{
-        font-size: 1.2rem;
-    }
-
+  .parallax p {
+    font-size: 1.2rem;
+  }
+  .parallax span {
+    font-size: 1.2rem;
+  }
 }
 @media (min-width: 625px) {
-    .parallax p{
-        font-size: 1.7rem;
-    }
-    .parallax span{
-        font-size: 1.7rem;
-    }
-
+  .parallax p {
+    font-size: 1.7rem;
+  }
+  .parallax span {
+    font-size: 1.7rem;
+  }
 }
 
 @media (min-width: 768px) {
-    .active{
-        border-bottom: var(--primary) solid 2px;
-    }
-    .active:hover{
-        border-bottom: var(--primaryHover) solid 2px;
-    }
-    .parallax p{
-        font-size: 2rem;
-    }
-    .parallax span{
-        font-size: 2rem;
-    }
-
+  .active {
+    border-bottom: var(--primary) solid 2px;
+  }
+  .active:hover {
+    border-bottom: var(--primaryHover) solid 2px;
+  }
+  .parallax p {
+    font-size: 2rem;
+  }
+  .parallax span {
+    font-size: 2rem;
+  }
 }
 
-  /*********TARIFS CARDS****** */ 
+/*********TARIFS CARDS****** */
 
-  #tarifs{
-    padding-bottom: 150px;
-    border-bottom: 1px solid #333;
+#tarifs {
+  padding-bottom: 150px;
+  border-bottom: 1px solid #333;
 }
-#tarifs h1{
-    text-align: center;
-    font-size: 35px;
-    color:var(--primary);
-    line-height: 150%;
-    font-weight: bold;
-    margin: 50px 0 20px;
-    padding: 0 30px;
-}
-
-.tarifs-box{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    
+#tarifs h1 {
+  text-align: center;
+  font-size: 35px;
+  color: var(--primary);
+  line-height: 150%;
+  font-weight: bold;
+  margin: 50px 0 20px;
+  padding: 0 30px;
 }
 
-
-
-/* *****MINI CARTE****** */
-.minicarte1{
-    width: 350px;
-    height: auto;
-    border-radius: 5px;
-    margin: 15px 15px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    transition: all o.2s ease-in-out;
-    position: relative;
-
-    z-index: 0;
+.tarifs-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.minicarte1 h4{
-    text-align: center;
-    padding: 25px 20px ;
-    font-size: 35px;
-    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
-    background:var(--primary);
-}
-.minicarte1 span{
-    display: block;
-    text-align: center;
-    padding: 15px;
-    font-size: 25px;
-    font-weight: bold;
-}
-.minicarte1:hover{
-    transform: translateY(-5px);
-}
-.minicarte2{
-    width: 350px;
-    height: auto;
-    border-radius: 5px;
-    margin: 15px 15px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    transition: all o.2s ease-in-out;
-    position: relative;
-    z-index: 0;
-}
-.minicarte2 h4{
-    text-align: center;
-    padding: 25px 20px ;
-    font-size: 35px;
-    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
-    background:var(--secondary);
-}
-.minicarte2 span{
-    display: block;
-    text-align: center;
-    padding: 15px;
-    font-size: 25px;
-    font-weight: bold;
-}
-.minicarte2:hover{
-    transform: translateY(-5px);
-}
-.minicarte3{
-    width: 350px;
-    height: auto;
-    border-radius: 5px;
-    margin: 15px 15px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    transition: all o.2s ease-in-out;
-    position: relative;
-    z-index: 0;
-}
-.minicarte3 h4{
-    text-align: center;
-    padding: 25px 20px ;
-    font-size: 35px;
-    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
-    background: var(--closeButton);
-}
-.minicarte3 span{
-    display: block;
-    text-align: center;
-    padding: 15px;
-    font-size: 25px;
-    font-weight: bold;
-}
-.minicarte1:hover{
-    transform: translateY(-5px);
-}
-.minicarte3:hover{
-    transform: translateY(-5px);
-}
-
-
-
-
-/* ****VISIBLE INVISIBLE******** */
-.carte1.is-visible{
-    display: block;
-}
-.carte1.is-invisible{
-    display:none;
-}
-.minicarte1.is-invisible{
-    display:none;
-}
-.minicarte1.is-visible{
-    display: block;
-}
-
-.carte2.is-visible{
-    display: block;
-}
-.carte2.is-invisible{
-    display:none;
-}
-.minicarte2.is-invisible{
-    display:none;
-}
-.minicarte2.is-visible{
-    display: block;
-}
-
-
-.carte3.is-visible{
-    display: block;
-}
-.carte3.is-invisible{
-    display:none;
-}
-.minicarte3.is-invisible{
-    display:none;
-}
-.minicarte3.is-visible{
-    display: block;
-}
-
 
 /* *******GRANDE CARTE********* */
-.carte-tarif{
-    width: 350px;
-    height: auto;
-    border-radius: 5px;
-    margin: 15px 15px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    transition: all o.2s ease-in-out;
-    position: relative;
-    z-index: 0;
-    padding-bottom: 1px;
-    
+.carte-tarif {
+  width: 350px;
+  height: auto;
+  border-radius: 5px;
+  margin: 15px 15px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: all o.2s ease-in-out;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 1px;
 }
-.carte-tarif h4{
-    text-align: center;
-    padding: 25px 20px ;
-    font-size: 35px;
-    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
-    background:var(--primary);
+.carte-tarif h4 {
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 35px;
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+  background: var(--primary);
 }
-.carte-tarif span{
-    display: block;
-    text-align: center;
-    padding: 15px;
-    font-size: 25px;
-    font-weight: bold;
+.carte-tarif span {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  font-size: 25px;
+  font-weight: bold;
 }
-.carte2 h4{
-    background:var(--secondary) ;
+.carte-tarif:nth-child(2) h4 {
+  background: var(--secondary);
 }
-.carte3 h4{
-    background: var(--closeButton);
+.carte-tarif:nth-child(3) h4 {
+  background: var(--closeButton);
 }
-.carte-tarif p{
-    font-size: 18px;
-    padding: 20px 10px;
-    border-top: 1px solid rgb(194, 197, 194);
+.carte-tarif p {
+  font-size: 18px;
+  padding: 20px 10px;
+  border-top: 1px solid rgb(194, 197, 194);
 }
-.carte-tarif p:last-of-type{
-    border-bottom: 1px solid  rgb(194, 197, 194);
+.carte-tarif p:last-of-type {
+  border-bottom: 1px solid rgb(194, 197, 194);
 }
-.carte-tarif p:nth-child(odd){
-    background: rgba(195,195,195,0.219);
+.carte-tarif p:nth-child(odd) {
+  background: rgba(195, 195, 195, 0.219);
 }
-.carte3 a{
-    margin-bottom: 120px  ;
+.carte3 a {
+  margin-bottom: 120px;
 }
 .carte-tarif a {
-    display: block;
-    text-decoration: none;
-    border: 1px solid #333;
-    text-align: center;
-    width: 200px;
-    height: 50px;
-    border-radius: 9999px;
-    color: #333;
-    font-size: 18px;
-    line-height: 50px;
-    margin: 20px auto ;
-    cursor: pointer;
-    background-image: linear-gradient(to right, transparent 50%, rgb(65,65,65) 50%, rgb(134,134,134));
-    background-size: 200%;
-    transition: all 0.4s ease-in-out;
+  display: block;
+  text-decoration: none;
+  border: 1px solid #333;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 9999px;
+  color: #333;
+  font-size: 18px;
+  line-height: 50px;
+  margin: 20px auto;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    rgb(65, 65, 65) 50%,
+    rgb(134, 134, 134)
+  );
+  background-size: 200%;
+  transition: all 0.4s ease-in-out;
 }
-.carte-tarif a:hover{
-    
-    background-position: 100%;
-    color: #f1f1f1;
+.carte-tarif a:hover {
+  background-position: 100%;
+  color: #f1f1f1;
 }
-.carte1{
-    display :none;
+.carte1 {
+  display: none;
 }
-.carte2{
-    display :none;
+.carte2 {
+  display: none;
 }
-.carte3{
-    display :none;
+.carte3 {
+  display: none;
+}
+
+/* ****VISIBLE INVISIBLE******** */
+.carte1.is-visible {
+  display: block;
+}
+.carte1.is-invisible {
+  display: none;
+}
+
+.carte2.is-visible {
+  display: block;
+}
+.carte2.is-invisible {
+  display: none;
+}
+
+.carte3.is-visible {
+  display: block;
+}
+.carte3.is-invisible {
+  display: none;
 }
 
 @media (min-width: 768px) {
-    .minicarte1{
-        display: none;
+  div.carte1 {
+    display: block;
+  }
+  div.carte2 {
+    display: block;
+  }
+  div.carte3 {
+    display: block;
+  }
 }
-    .minicarte2{
-        display: none;
-}
-    .minicarte3{
-        display: none;
-}
-div.carte1{
-    display :block;
-}
-div.carte2{
-    display :block;
-}
-div.carte3{
-    display :block;
-}
-
-}
-
 
 /* *******CONTACT****** */
-.section-contact h1{
-
-    text-align: center;
-    font-size: 35px;
-    color:var(--primary);
-    line-height: 150%;
-    font-weight: bold;
-    margin: 50px 0 40px;
-    padding: 0 30px;
+.section-contact h1 {
+  text-align: center;
+  font-size: 35px;
+  color: var(--primary);
+  line-height: 150%;
+  font-weight: bold;
+  margin: 50px 0 40px;
+  padding: 0 30px;
 }
-.section-contact{
-    margin-top: 50px;
-    padding-bottom: 100px;
+.section-contact {
+  margin-top: 50px;
+  padding-bottom: 100px;
 }
-.section-contact h2{
-    text-align: center;
-    color: #333;
-    font-size: 48px;
-    font-weight: 400px;
-    margin-bottom: 50px;
-    padding: 70px 0 0 0;
+.section-contact h2 {
+  text-align: center;
+  color: #333;
+  font-size: 48px;
+  font-weight: 400px;
+  margin-bottom: 50px;
+  padding: 70px 0 0 0;
 }
-.container-form{
-    margin: 0 auto;
-    width: 70%;
+.container-form {
+  margin: 0 auto;
+  width: 70%;
 }
-.form-groupe{
-    position: relative;
-    margin-bottom: 45px;
+.form-groupe {
+  position: relative;
+  margin-bottom: 45px;
 }
-.form-groupe label{
-    color: rgb(58, 55, 55);
-    font-size: 20px;
-    font-weight: bold
+.form-groupe label {
+  color: rgb(58, 55, 55);
+  font-size: 20px;
+  font-weight: bold;
 }
-.form-groupe input{
-    display: block;
-    width: 100%;
-    padding: 10px 0px;
-    border: none;
-    outline: none;
-    background: none;
-    border-bottom: 3px solid #aaa;
-    color: #666;
-    font-size: 20px;
+.form-groupe input {
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 3px solid #aaa;
+  color: #666;
+  font-size: 20px;
 }
-textarea{
-    width: 100%;
-    height: 200px;
-    border: none;
-    border: 3px solid #aaa;
-    border-radius: 5px;
-    resize: none;
-    outline: none;
-    font-size: 20px;
-    background: #f1f1f1;
+textarea {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border: 3px solid #aaa;
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+  font-size: 20px;
+  background: #f1f1f1;
 }
-.form-groupe:nth-child(4){
-    margin-bottom: 25px;
+.form-groupe:nth-child(4) {
+  margin-bottom: 25px;
 }
 .form-groupe .button-sub {
-    display: block;
-    width: auto;
-    padding: 15px 60px;
-    border: 3px solid rgb(144,144,144);
-    border-radius: 9999px;
-    background-image: linear-gradient(to right, transparent 50%, rgb(65,65,65) 50%, rgb(134,134,134));
-    background-size: 200%;
-    color: #333;
-    font-size: 1.1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
+  display: block;
+  width: auto;
+  padding: 15px 60px;
+  border: 3px solid rgb(144, 144, 144);
+  border-radius: 9999px;
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    rgb(65, 65, 65) 50%,
+    rgb(134, 134, 134)
+  );
+  background-size: 200%;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
 .form-groupe .button-sub:hover {
-    color: #fff;
-    background-position: 100%;
-    border: 3px solid #fff;
+  color: #fff;
+  background-position: 100%;
+  border: 3px solid #fff;
 }
 @media (min-width: 625px) {
-    .form-groupe .button-sub{
-        font-size: 1.7rem;
-    }
-    
-    
+  .form-groupe .button-sub {
+    font-size: 1.7rem;
+  }
 }
-
-
 
 /* **********light title******* */
 
-.light-title ul{
-    margin-top: 40px;
-    width: 100%;
-    text-align: center;
-    top: 30%;
-
+.light-title ul {
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  top: 30%;
 }
-.light-title ul li{
-    
-    display: inline-block;
-    list-style-type: none;
-    color: #484848;
-    font-weight: bold;
-    font-size: 0.9em;
-    letter-spacing: 15px;
-    animation: flash 1.4s linear infinite;
+.light-title ul li {
+  display: inline-block;
+  list-style-type: none;
+  color: #484848;
+  font-weight: bold;
+  font-size: 0.9em;
+  letter-spacing: 15px;
+  animation: flash 1.4s linear infinite;
 }
 
 @keyframes flash {
-    0%{
-        color:#484848;
-        text-shadow: none;
-    }
-    90%{
-        color: #484848;
-        text-shadow: none;
-    }
-    100%{
-        color: #fff900;
-        text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
-    }
-
+  0% {
+    color: #484848;
+    text-shadow: none;
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+  }
 }
 
 .light-title ul li:nth-child(1) {
-    animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 .light-title ul li:nth-child(2) {
-    animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 .light-title ul li:nth-child(3) {
-    animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 .light-title ul li:nth-child(4) {
-    animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 .light-title ul li:nth-child(5) {
-    animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 .light-title ul li:nth-child(6) {
-    animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 .light-title ul li:nth-child(7) {
-    animation-delay: 0.7s;
+  animation-delay: 0.7s;
 }
 .light-title ul li:nth-child(8) {
-    animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 .light-title ul li:nth-child(9) {
-    animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+.light-title ul li:nth-child(10) {
+  animation-delay: 1s;
+}
+.light-title ul li:nth-child(11) {
+  animation-delay: 1s;
 }
 
 @media (min-width: 425px) {
-    .light-title ul li{
-        font-size: 1.1rem;
-    }
-
-
+  .light-title ul li {
+    font-size: 1.1rem;
+  }
 }
 @media (min-width: 625px) {
-    .light-title ul li{
-        font-size: 1.7rem;
-    }
-    
-    
+  .light-title ul li {
+    font-size: 1.7rem;
+  }
 }
 
 @media (min-width: 768px) {
-    .light-title ul li{
-        font-size: 2rem;
-    }
+  .light-title ul li {
+    font-size: 2rem;
+  }
 }
 /* ********** CHECKBOX**********/
-.label{
-    font-size: 0.9rem;
-    color:var(--primary);
-    font-weight: bold;
-    text-align: center;
-    
+.label {
+  font-size: 0.9rem;
+  color: var(--primary);
+  font-weight: bold;
+  text-align: center;
 }
 
-.check{
-    margin: 40px auto;
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid;
-    border-radius: 9999px;
-    padding: 30px ;
+.check {
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid;
+  border-radius: 9999px;
+  padding: 30px;
 }
-input[type="checkbox"]{
-    position: relative;
-    width: 40px;
-    height: 20px;
-    -webkit-appearance:none;
-    background: #c6c6c6;
-    outline: none;
-    border-radius: 20px;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
- 
+input[type="checkbox"] {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  -webkit-appearance: none;
+  background: #c6c6c6;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-input:checked[type="checkbox"]{
-    background: var(--primary);
+input:checked[type="checkbox"] {
+  background: var(--primary);
 }
-input[type="checkbox"]::before{
-    content:'';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    border-radius: 20px;
-    top: 0;
-    left:0;
-    transform: scale(1.1);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: .5s;
-
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
 }
-input:checked[type="checkbox"]::before{
-    left: 20px;
-};
-
-
-
+input:checked[type="checkbox"]::before {
+  left: 20px;
+}
 
 @media (min-width: 425px) {
-    .label{
-        font-size: 1.1rem;
-    }
-    input[type="checkbox"]{
-        width: 45px;
-        height: 23px;
-    }
-    input[type="checkbox"]::before{
-        width: 23px;
-        height: 23px;
-    }
-    input:checked[type="checkbox"]::before{
-        left: 23px;
-    };
-      
-
-
+  .label {
+    font-size: 1.1rem;
+  }
+  input[type="checkbox"] {
+    width: 45px;
+    height: 23px;
+  }
+  input[type="checkbox"]::before {
+    width: 23px;
+    height: 23px;
+  }
+  input:checked[type="checkbox"]::before {
+    left: 23px;
+  }
 }
 @media (min-width: 625px) {
-    .label{
-        font-size: 1.3rem;
-    }
-    input[type="checkbox"]{
-        width: 50px;
-        height: 25px;
-    }
-    input[type="checkbox"]::before{
-        width: 25px;
-        height: 25px;
-    }
-    input:checked[type="checkbox"]::before{
-        left: 25px;
-    };
- 
-
+  .label {
+    font-size: 1.3rem;
+  }
+  input[type="checkbox"] {
+    width: 50px;
+    height: 25px;
+  }
+  input[type="checkbox"]::before {
+    width: 25px;
+    height: 25px;
+  }
+  input:checked[type="checkbox"]::before {
+    left: 25px;
+  }
 }
 
 @media (min-width: 768px) {
-    .label{
-        font-size: 1.5rem;
-    }
-    input[type="checkbox"]{
-        width: 55px;
-        height: 30px;
-    }
-    input[type="checkbox"]::before{
-        width: 30px;
-        height: 30px;
-    }
-    input:checked[type="checkbox"]::before{
-        left: 30px;
-    };
+  .label {
+    font-size: 1.5rem;
+  }
+  input[type="checkbox"] {
+    width: 55px;
+    height: 30px;
+  }
+  input[type="checkbox"]::before {
+    width: 30px;
+    height: 30px;
+  }
+  input:checked[type="checkbox"]::before {
+    left: 30px;
+  }
 }
