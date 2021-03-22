@@ -83,7 +83,7 @@
   flex-wrap: wrap;
 }
 
-/* *******GRANDE CARTE********* */
+
 .carte-tarif {
   width: 350px;
   height: auto;
@@ -99,7 +99,7 @@
 .carte-tarif h4 {
   text-align: center;
   padding: 25px 20px;
-  font-size: 35px;
+  font-size: 1.5rem;
   clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
   background: var(--primary);
 }
@@ -165,6 +165,23 @@
 .carte3 {
   display: none;
 }
+
+@media (min-width: 425px) {
+    .carte-tarif h4 {
+      font-size: 1.7rem;
+    }
+  }
+  @media (min-width: 625px) {
+    .carte-tarif h4 {
+      font-size: 1.9rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .carte-tarif h4 {
+      font-size: 2.2rem;
+    }
+  }
 
 /* ****VISIBLE INVISIBLE******** */
 .carte1.is-visible {
@@ -303,8 +320,8 @@ textarea {
   list-style-type: none;
   color: #484848;
   font-weight: bold;
-  font-size: 0.9em;
-  letter-spacing: 15px;
+  font-size: 1em;
+  letter-spacing: 0.5em;
   animation: flash 1.4s linear infinite;
 }
 
@@ -375,10 +392,10 @@ textarea {
 }
 /* ********** CHECKBOX**********/
 .label {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: var(--primary);
   font-weight: bold;
-  text-align: center;
+  text-align: match-parent;
 }
 
 .check {
@@ -422,7 +439,7 @@ input:checked[type="checkbox"]::before {
 
 @media (min-width: 425px) {
   .label {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   input[type="checkbox"] {
     width: 45px;
