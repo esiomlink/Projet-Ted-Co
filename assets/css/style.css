@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap");
 
 :root {
-  --primary: #4f934f;
-  --primaryHover: #386138;
-  --primaryActive: #4f934f81;
-  --secondary: #9f825f;
+  --primary: #fff;
+  --primaryHover: #fff900;
+  --primaryActive: #fffb00be;
+  --secondary: ;
   --secondaryBis: #e4d5c2;
   --closeButton: #b30c0c;
   --whiteText: #fff;
