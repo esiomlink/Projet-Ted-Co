@@ -5,11 +5,6 @@
 .parallax {
   width: 100%;
   height: 400px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.11)),
-    url(../img/poker.jpg);
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,14 +16,17 @@
   color: white;
   line-height: 150%;
   font-weight: bold;
+  text-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
 }
 .parallax span {
   display: block;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 150%;
   font-weight: bold;
   color: white;
+  text-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
 }
+
 @media (min-width: 425px) {
   .parallax p {
     font-size: 1.2rem;
@@ -60,6 +58,14 @@
     font-size: 2rem;
   }
 }
+@media (min-width: 1024px) {
+  .parallax p {
+    font-size: 2.8rem;
+  }
+  .parallax span {
+    font-size: 2.8rem;
+  }
+}
 
 /*********TARIFS CARDS****** */
 
@@ -69,12 +75,13 @@
 }
 #tarifs h1 {
   text-align: center;
-  font-size: 35px;
+  font-size: 1.5rem;
   color: var(--primary);
   line-height: 150%;
   font-weight: bold;
   margin: 50px 0 20px;
   padding: 0 30px;
+  text-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
 }
 
 .tarifs-box {
@@ -87,21 +94,28 @@
 .carte-tarif {
   width: 350px;
   height: auto;
-  border-radius: 5px;
   margin: 15px 15px;
+  /* border-radius: 20px; */
   cursor: pointer;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   transition: all o.2s ease-in-out;
   position: relative;
   z-index: 0;
   padding-bottom: 1px;
+  background: var(--backgroundText);
+ 
+}
+.carte-tarif:hover{
+  box-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
 }
 .carte-tarif h4 {
   text-align: center;
   padding: 25px 20px;
   font-size: 1.5rem;
+  font-weight: bold;
   clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
-  background: var(--primary);
+  background: #4F934F;
+  
 }
 .carte-tarif span {
   display: block;
@@ -111,7 +125,7 @@
   font-weight: bold;
 }
 .carte-tarif:nth-child(2) h4 {
-  background: var(--secondary);
+  background: var(--lighteningOrange);
 }
 .carte-tarif:nth-child(3) h4 {
   background: var(--closeButton);
@@ -133,12 +147,13 @@
 .carte-tarif a {
   display: block;
   text-decoration: none;
-  border: 1px solid #333;
+  border: 2px solid #f1f1f1;
   text-align: center;
   width: 200px;
   height: 50px;
   border-radius: 9999px;
-  color: #333;
+  color: #f1f1f1;
+  font-weight: bold;
   font-size: 18px;
   line-height: 50px;
   margin: 20px auto;
@@ -146,15 +161,17 @@
   background-image: linear-gradient(
     to right,
     transparent 50%,
-    rgb(65, 65, 65) 50%,
-    rgb(134, 134, 134)
+    rgb(255,108,0,1) 50%,
+    rgb(255,249,0,1)
   );
   background-size: 200%;
   transition: all 0.4s ease-in-out;
 }
 .carte-tarif a:hover {
   background-position: 100%;
-  color: #f1f1f1;
+  color: black;
+  border:2px solid black;
+  
 }
 .carte1 {
   display: none;
@@ -170,9 +187,15 @@
     .carte-tarif h4 {
       font-size: 1.7rem;
     }
+    #tarifs h1 {
+      font-size: 1.7rem;
+    }
   }
   @media (min-width: 625px) {
     .carte-tarif h4 {
+      font-size: 1.9rem;
+    }
+    #tarifs h1 {
       font-size: 1.9rem;
     }
   }
@@ -180,6 +203,15 @@
   @media (min-width: 768px) {
     .carte-tarif h4 {
       font-size: 2.2rem;
+    }
+    #tarifs h1 {
+      font-size: 2.2rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    
+    #tarifs h1 {
+      font-size: 2.5rem;
     }
   }
 
@@ -220,12 +252,13 @@
 /* *******CONTACT****** */
 .section-contact h1 {
   text-align: center;
-  font-size: 35px;
+  font-size: 1rem;
   color: var(--primary);
   line-height: 150%;
   font-weight: bold;
   margin: 50px 0 40px;
   padding: 0 30px;
+  text-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;;
 }
 .section-contact {
   margin-top: 50px;
@@ -233,24 +266,33 @@
 }
 .section-contact h2 {
   text-align: center;
-  color: #333;
+  color: var(--primary);
   font-size: 48px;
   font-weight: 400px;
   margin-bottom: 50px;
   padding: 70px 0 0 0;
 }
+
 .container-form {
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
+  background:var(--backgroundText);
+  border-radius: 20px;
+  padding: 10%;
+  box-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
 }
 .form-groupe {
   position: relative;
   margin-bottom: 45px;
 }
 .form-groupe label {
-  color: rgb(58, 55, 55);
+  color: var(--primary);
   font-size: 20px;
   font-weight: bold;
+}
+input::placeholder {
+  color: rgba(0, 0, 0, 0.39);
+  font-size: 1em;
 }
 .form-groupe input {
   display: block;
@@ -260,8 +302,11 @@
   outline: none;
   background: none;
   border-bottom: 3px solid #aaa;
-  color: #666;
-  font-size: 20px;
+  font-size: 25px;
+  color:BLACK;
+  font-weight: bold;
+
+  
 }
 textarea {
   width: 100%;
@@ -281,29 +326,55 @@ textarea {
   display: block;
   width: auto;
   padding: 15px 60px;
-  border: 3px solid rgb(144, 144, 144);
+  border: 3px solid #f1f1f1;
   border-radius: 9999px;
   background-image: linear-gradient(
     to right,
     transparent 50%,
-    rgb(65, 65, 65) 50%,
-    rgb(134, 134, 134)
+    rgb(255,108,0,1) 50%,
+    rgb(255,249,0,1)
   );
   background-size: 200%;
-  color: #333;
+  color: #f1f1f1;
   font-size: 1.1rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
 .form-groupe .button-sub:hover {
-  color: #fff;
+  color: black;
   background-position: 100%;
-  border: 3px solid #fff;
+  border: 3px solid black;
 }
-@media (min-width: 625px) {
+
+@media (min-width: 425px) {
   .form-groupe .button-sub {
     font-size: 1.7rem;
+  }
+  .section-contact h1 {
+    font-size: 1.5rem;
+}
+}
+@media (min-width: 768px) {
+  .form-groupe .button-sub {
+    font-size: 1.7rem;
+  }
+  .container-form {
+    width: 80%;
+  }
+  .section-contact h1 {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1024px) {
+  .form-groupe .button-sub {
+    font-size: 2.2rem;
+  }
+  .container-form {
+    width: 70%;
+  }
+  .section-contact h1 {
+    font-size: 2.5rem;
   }
 }
 
@@ -318,7 +389,7 @@ textarea {
 .light-title ul li {
   display: inline-block;
   list-style-type: none;
-  color: #484848;
+  color: var(--primary);
   font-weight: bold;
   font-size: 1em;
   letter-spacing: 0.5em;
@@ -327,11 +398,11 @@ textarea {
 
 @keyframes flash {
   0% {
-    color: #484848;
+    color: var(--primary);
     text-shadow: none;
   }
   90% {
-    color: #484848;
+    color: var(--primary);
     text-shadow: none;
   }
   100% {
@@ -418,14 +489,14 @@ input[type="checkbox"] {
 }
 
 input:checked[type="checkbox"] {
-  background: var(--primary);
+  background: var(--closeButton);
 }
 input[type="checkbox"]::before {
   content: "";
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #fff;
+  background:var(--primaryActive);
   border-radius: 20px;
   top: 0;
   left: 0;
