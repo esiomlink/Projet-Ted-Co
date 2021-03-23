@@ -28,7 +28,7 @@
   margin-right: 5px;
   margin-top: 25px;
   margin-bottom: 25px;
-  color: var(--primary);
+  
   border-radius: 5px;
 }
 
@@ -40,15 +40,17 @@
 
 .card-party-block {
   border-radius: 25px;
+
+  background-color: var(--backgroundText);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .card-party-text {
   padding: 0.5em;
   font-size: 1rem;
-  color: var(--whiteText);
+  color: var(--primary);
   padding: 3rem;
-  background-color: var(--primary);
+  background-color: var(--whiteText);
   width: 100%;
   height: 100%;
   border-radius: 25px;
@@ -60,7 +62,7 @@
   font-weight: bold;
   font-size: 2rem;
   padding: 0.5em;
-  background-color: var(--secondaryBis);
+  background-color: var(--backgroundText);
   border-radius: 0 0 15px 15px;
 }
 
