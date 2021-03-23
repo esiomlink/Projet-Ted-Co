@@ -454,6 +454,11 @@ textarea {
     font-size: 2rem;
   }
 }
+@media (min-width: 1024px) {
+  .light-title ul li {
+    font-size: 2.2rem;
+  }
+}
 /* ********** CHECKBOX**********/
 .label {
   font-size: 0.7rem;
