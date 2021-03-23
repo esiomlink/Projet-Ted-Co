@@ -15,6 +15,9 @@
   scroll-behavior: smooth;
 }
 body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/danny-howe-bn-D2bCvpik-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
   color: var(--primary);
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
