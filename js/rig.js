@@ -8,7 +8,7 @@ const second = [
     "I paid for a premium package, called \"Fantastic Party\" but I'm still waiting for my event. ",
     "My wife and I were not satisfied at all, these weirdos are crazy ! ",
     "I don't understand how is it possible to be as dumb as them... ",
-    "Who dare to pay for these guys ??"
+    "Who dare to pay for these guys ?? "
 ];
 const third = [
     "I swear, this is the first and the last time I'll call them ! ",
