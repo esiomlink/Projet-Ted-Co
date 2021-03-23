@@ -8,6 +8,7 @@
   --secondaryBis: #e4d5c2;
   --closeButton: #b30c0c;
   --whiteText: #fff;
+  --backgroundColor:#000;
 }
 
 * {
@@ -159,8 +160,8 @@ header nav a:active {
 /* ***** FOOTER ****** */
 
 footer {
-  background-color: var(--primary);
-  color: white;
+  background-color: var(--backgroundColor);
+  color: var(--whiteText);
   bottom: 0;
   position: relative;
   width: 100%;
@@ -204,10 +205,11 @@ footer {
   height: 50px;
   margin: 0.5rem;
   border-radius: 25px;
-  transition: all 0.2s ease-in-out;
-}
+  transition: all 0.1s ease-in-out;
+} 
 .footer-icon-nav img:hover{
-  box-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+  box-shadow: 0 0 34px #fff900, 0 0 80px #ff6c00;
+  transform: scale(1.2);
 }
 .footer-title {
   text-align: center;
