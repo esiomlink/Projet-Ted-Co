@@ -157,31 +157,61 @@ header nav a:active {
 }
 
 /* ***** FOOTER ****** */
+
 footer {
-  background-color: var(--primary); /* temp */
-  color:white;
+  background-color: var(--primary);
+  color: white;
   bottom: 0;
   position: relative;
   width: 100%;
-  border-radius: 15px 15px 0 0; /* temp */
+  padding-top: 2rem;
+}
+.card-footer{
+  
+}
+.card-footer-up {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-footer-down {
+  font-size: 1rem;
+  display: flex;
+}
+
+.footer-left {
+  display: inline-block;
+  align-items: flex-start;
+}
+
+.footer-right {
+  display: inline-block;
+  align-items: flex-end;
+}
+
+.footer-icons {
+  display: flex;
   padding: 0;
 }
 
-.site-plan {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-}
-.part-nav {
+.footer-icon-nav {
   list-style: none;
   margin: 0 5px 0 5px;
 }
+
+.footer-icon-nav img {
+  width: 50px;
+  height: 50px;
+  margin: 0.5rem;
+  border-radius: 25px;
+}
+
 .footer-title {
   text-align: center;
 }
+
 .footer-legal {
-  position: flex;
-  justify-content: center;
+  width:100%;
   text-align: center;
 }
 
