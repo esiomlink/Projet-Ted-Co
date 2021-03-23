@@ -1,17 +1,13 @@
 @import url("style.css");
 
 /* HERO SECTION */
-#hero-image{
+#hero-container{
+    height: 100vh;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ted-hero-banner.jpg"); */
-    height: 60vh;
+    justify-content: center;
+    align-items: center;
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    text-align: center;
 }
 .hero-text{
     max-width: 80%;
@@ -25,11 +21,23 @@
     
     color: var(--whiteText);
 }
-/* Scroll down  div */
-.scroll-to-go-down{
-    height: 0vh;
-    width: 0;
-    opacity: 0; 
+/* Scroll down Btn  */
+.gradient-button {
+    height: 5rem;
+    width: 12rem;
+    margin-top: 2rem;
+    background: transparent linear-gradient(to top left, rgba(249,208,129,.2) 0%, rgba(227,2,62,.2) 40%, rgba(49,128,135,.2) 100%);
+    border: 5px solid transparent;
+    border-image-source: linear-gradient(to top left, rgba(249,208,129,1) 0%, rgba(227,2,62,1) 40%, rgba(49,128,135,1) 100%);
+    border-image-slice: 1;
+    transition: transform 0.25s;
+    letter-spacing: .2rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--primary);
 }
 /* PRESENTATION */
 #our-story{
@@ -37,10 +45,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     height: auto;
     padding: 1rem 1rem 0rem 1rem;
-    margin-top: 2rem;
 }
 #our-story h2{
     font-weight: 600;
@@ -140,41 +146,5 @@
     }
     .hero-text h1{
         font-size: 3rem;
-    }
-    /* SCROLL DOWN */
-    .scroll-to-go-down{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        width: auto;
-        height: auto;
-        background-color: var(--lighteningOrange);
-        color: var(--primary);
-
-        font-size: 1.3rem;
-        font-weight: 600;
-        text-align: center;
-        line-height: 1.5rem;
-        letter-spacing: 0.2rem;
-    
-        padding: 1rem;
-        transition: 1s;
-        opacity: 1;;
-    }
-    #btn-scroll-down{
-        width: 10rem;
-        padding: 0.5rem;
-        margin-top: 1rem;
-        border: none;
-        border-radius: 5px;
-        font-weight: 800;
-        font-size: 1rem;
-        background-color: var(--lighteningOrange);
-    }
-    #btn-scroll-down:hover{
-        background-color:var(--primary);
-        color: var(--lighteningOrange);
     }
 }
