@@ -167,7 +167,7 @@ footer {
   padding-top: 2rem;
 }
 .card-footer{
-  
+  padding-bottom : 1rem;
 }
 .card-footer-up {
   display: flex;
@@ -204,8 +204,11 @@ footer {
   height: 50px;
   margin: 0.5rem;
   border-radius: 25px;
+  transition: all 0.2s ease-in-out;
 }
-
+.footer-icon-nav img:hover{
+  box-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+}
 .footer-title {
   text-align: center;
 }
@@ -213,6 +216,7 @@ footer {
 .footer-legal {
   width:100%;
   text-align: center;
+  margin-top:1rem;
 }
 
 /* MEDIA QUERY DESKTOP */
