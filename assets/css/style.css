@@ -163,7 +163,6 @@ footer {
   background-color: var(--backgroundColor);
   color: var(--whiteText);
   bottom: 0;
-  position: relative;
   width: 100%;
   padding-top: 2rem;
 }
@@ -171,8 +170,9 @@ footer {
   padding-bottom : 1rem;
 }
 .card-footer-up {
-  display: flex;
-  justify-content: space-evenly;
+  display:flex;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
 .card-footer-down {
@@ -192,6 +192,7 @@ footer {
 
 .footer-icons {
   display: flex;
+  justify-content: center;
   padding: 0;
 }
 
@@ -259,5 +260,10 @@ footer {
   }
   nav li {
     margin-right: 1rem;
+  }
+  .card-footer-up {
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
   }
 }
