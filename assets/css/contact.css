@@ -407,7 +407,7 @@ textarea {
   }
   100% {
     color: #fff900;
-    text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+    text-shadow: 0 0 25px #fff900, 0 0 50px #ff6c00;
   }
 }
 
@@ -503,6 +503,9 @@ input[type="checkbox"]::before {
   transform: scale(1.1);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
+}
+input[type="checkbox"]:hover::before {
+  background:var(--lighteningOrange);
 }
 input:checked[type="checkbox"]::before {
   left: 20px;
