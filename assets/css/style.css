@@ -4,10 +4,9 @@
   --primary: #fff;
   --primaryHover: #fff900;
   --primaryActive: #fffb00be;
-  --bckg-color:rgba(180, 174, 174, 0.466) ;
-  --secondaryBis: #e4d5c2;
+  --backgroundText:rgba(180, 174, 174, 0.466) ;
+  --lighteningOrange:#ff6c00;
   --closeButton: #b30c0c;
-  --whiteText: #fff;
   --backgroundColor:#000;
 }
 
@@ -16,7 +15,7 @@
   scroll-behavior: smooth;
 }
 body {
-  color: rgba(0, 0, 0, 0.801);
+  color: var(--primary);
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   line-height: 150%;
@@ -24,7 +23,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 a {
-  color: rgba(0, 0, 0, 0.801);
+  color:var(--primary);
   text-decoration: none;
 }
 
@@ -70,7 +69,7 @@ a {
   top: 24px;
 }
 .burgerMenu.show .lignes:nth-child(1) {
-  background: var(--closeButton);
+  background: var(--lighteningOrange);
   top: 15px;
   transform: rotate(135deg);
 }
@@ -79,13 +78,13 @@ a {
   transform: translateX(-20px);
 }
 .burgerMenu.show .lignes:nth-child(3) {
-  background: var(--closeButton);
+  background: var(--lighteningOrange);
   top: 15px;
   transform: rotate(-135deg);
 }
 header::before {
   content: "";
-  background-color: rgb(255, 255, 255);
+  background-color:var(--backgroundColor);
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
   height: 70px;
   position: fixed;
@@ -95,7 +94,7 @@ header::before {
   z-index: 2;
 }
 header nav {
-  background-color: rgb(255, 255, 255);
+  background-color:var(--backgroundColor);
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
   opacity: 0;
   overflow: hidden;
@@ -127,7 +126,7 @@ header nav a {
   transition: color 300ms ease;
 }
 header nav a:hover {
-  color: var(--primaryHover);
+  color: var(--lighteningOrange);
 }
 header nav a:active {
   color: var(--primaryActive);
@@ -161,7 +160,7 @@ header nav a:active {
 
 footer {
   background-color: var(--backgroundColor);
-  color: var(--whiteText);
+  color: var(--primary);
   bottom: 0;
   width: 100%;
   padding-top: 2rem;
@@ -236,17 +235,17 @@ footer {
   }
  
   header nav {
+      background-color: var(--backgroundColor);
       background: linear-gradient(180deg, 
-      rgba(255,255,255,1) 0%,
-      rgba(255,255,255,0.4598039899553571) 75%, 
+      rgb(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.46) 75%, 
       rgba(0,0,0,0) 100%);
       box-shadow: none;
       opacity: 1;
       top: 0;
   }
   header nav.scroll {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--backgroundColor);
   }
   .nav-wrap {
     align-items: center;
