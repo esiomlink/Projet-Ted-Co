@@ -90,7 +90,6 @@
   flex-wrap: wrap;
 }
 
-
 .carte-tarif {
   width: 350px;
   height: auto;
@@ -103,9 +102,8 @@
   z-index: 0;
   padding-bottom: 1px;
   background: var(--backgroundText);
- 
 }
-.carte-tarif:hover{
+.carte-tarif:hover {
   box-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
 }
 .carte-tarif h4 {
@@ -114,8 +112,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
-  background: #4F934F;
-  
+  background: #4f934f;
 }
 .carte-tarif span {
   display: block;
@@ -161,8 +158,8 @@
   background-image: linear-gradient(
     to right,
     transparent 50%,
-    rgb(255,108,0,1) 50%,
-    rgb(255,249,0,1)
+    rgb(255, 108, 0, 1) 50%,
+    rgb(255, 249, 0, 1)
   );
   background-size: 200%;
   transition: all 0.4s ease-in-out;
@@ -170,8 +167,7 @@
 .carte-tarif a:hover {
   background-position: 100%;
   color: black;
-  border:2px solid black;
-  
+  border: 2px solid black;
 }
 .carte1 {
   display: none;
@@ -184,36 +180,35 @@
 }
 
 @media (min-width: 425px) {
-    .carte-tarif h4 {
-      font-size: 1.7rem;
-    }
-    #tarifs h1 {
-      font-size: 1.7rem;
-    }
+  .carte-tarif h4 {
+    font-size: 1.7rem;
   }
-  @media (min-width: 625px) {
-    .carte-tarif h4 {
-      font-size: 1.9rem;
-    }
-    #tarifs h1 {
-      font-size: 1.9rem;
-    }
+  #tarifs h1 {
+    font-size: 1.7rem;
   }
-  
-  @media (min-width: 768px) {
-    .carte-tarif h4 {
-      font-size: 2.2rem;
-    }
-    #tarifs h1 {
-      font-size: 2.2rem;
-    }
+}
+@media (min-width: 625px) {
+  .carte-tarif h4 {
+    font-size: 1.9rem;
   }
-  @media (min-width: 1024px) {
-    
-    #tarifs h1 {
-      font-size: 2.5rem;
-    }
+  #tarifs h1 {
+    font-size: 1.9rem;
   }
+}
+
+@media (min-width: 768px) {
+  .carte-tarif h4 {
+    font-size: 2.2rem;
+  }
+  #tarifs h1 {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  #tarifs h1 {
+    font-size: 2.5rem;
+  }
+}
 
 /* ****VISIBLE INVISIBLE******** */
 .carte1.is-visible {
@@ -258,7 +253,7 @@
   font-weight: bold;
   margin: 50px 0 40px;
   padding: 0 30px;
-  text-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;;
+  text-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
 }
 .section-contact {
   margin-top: 50px;
@@ -276,7 +271,7 @@
 .container-form {
   margin: 0 auto;
   width: 90%;
-  background:var(--backgroundText);
+  background: var(--backgroundText);
   border-radius: 20px;
   padding: 10%;
   box-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
@@ -303,10 +298,8 @@ input::placeholder {
   background: none;
   border-bottom: 3px solid #aaa;
   font-size: 25px;
-  color:BLACK;
+  color: BLACK;
   font-weight: bold;
-
-  
 }
 textarea {
   width: 100%;
@@ -331,8 +324,8 @@ textarea {
   background-image: linear-gradient(
     to right,
     transparent 50%,
-    rgb(255,108,0,1) 50%,
-    rgb(255,249,0,1)
+    rgb(255, 108, 0, 1) 50%,
+    rgb(255, 249, 0, 1)
   );
   background-size: 200%;
   color: #f1f1f1;
@@ -353,7 +346,7 @@ textarea {
   }
   .section-contact h1 {
     font-size: 1.5rem;
-}
+  }
 }
 @media (min-width: 768px) {
   .form-groupe .button-sub {
@@ -496,7 +489,7 @@ input[type="checkbox"]::before {
   position: absolute;
   width: 20px;
   height: 20px;
-  background:var(--primaryActive);
+  background: var(--primaryActive);
   border-radius: 20px;
   top: 0;
   left: 0;
@@ -505,7 +498,7 @@ input[type="checkbox"]::before {
   transition: 0.5s;
 }
 input[type="checkbox"]:hover::before {
-  background:var(--lighteningOrange);
+  background: var(--lighteningOrange);
 }
 input:checked[type="checkbox"]::before {
   left: 20px;

@@ -4,10 +4,10 @@
   --primary: #fff;
   --primaryHover: #fff900;
   --primaryActive: #fffb00be;
-  --backgroundText:rgba(180, 174, 174, 0.466) ;
-  --lighteningOrange:#ff6c00;
+  --backgroundText: rgba(180, 174, 174, 0.466);
+  --lighteningOrange: #ff6c00;
   --closeButton: #b30c0c;
-  --backgroundColor:#000;
+  --backgroundColor: #000;
 }
 
 * {
@@ -15,7 +15,8 @@
   scroll-behavior: smooth;
 }
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/danny-howe-bn-D2bCvpik-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/danny-howe-bn-D2bCvpik-unsplash.jpg");
   background-size: cover;
   background-position: center;
   color: var(--primary);
@@ -26,7 +27,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 a {
-  color:var(--primary);
+  color: var(--primary);
   text-decoration: none;
 }
 
@@ -87,7 +88,7 @@ a {
 }
 header::before {
   content: "";
-  background-color:var(--backgroundColor);
+  background-color: var(--backgroundColor);
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
   height: 70px;
   position: fixed;
@@ -97,7 +98,7 @@ header::before {
   z-index: 2;
 }
 header nav {
-  background-color:var(--backgroundColor);
+  background-color: var(--backgroundColor);
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
   opacity: 0;
   overflow: hidden;
@@ -168,11 +169,11 @@ footer {
   width: 100%;
   padding-top: 2rem;
 }
-.card-footer{
-  padding-bottom : 1rem;
+.card-footer {
+  padding-bottom: 1rem;
 }
 .card-footer-up {
-  display:flex;
+  display: flex;
   flex-flow: column wrap;
   justify-content: center;
 }
@@ -209,8 +210,8 @@ footer {
   margin: 0.5rem;
   border-radius: 25px;
   transition: all 0.1s ease-in-out;
-} 
-.footer-icon-nav img:hover{
+}
+.footer-icon-nav img:hover {
   box-shadow: 0 0 34px #fff900, 0 0 80px #ff6c00;
   transform: scale(1.2);
 }
@@ -219,9 +220,9 @@ footer {
 }
 
 .footer-legal {
-  width:100%;
+  width: 100%;
   text-align: center;
-  margin-top:1rem;
+  margin-top: 1rem;
 }
 
 /* MEDIA QUERY DESKTOP */
@@ -236,16 +237,18 @@ footer {
     height: 0;
     width: 0;
   }
- 
+
   header nav {
-      background-color: var(--backgroundColor);
-      background: linear-gradient(180deg, 
+    background-color: var(--backgroundColor);
+    background: linear-gradient(
+      180deg,
       rgb(0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.46) 75%, 
-      rgba(0,0,0,0) 100%);
-      box-shadow: none;
-      opacity: 1;
-      top: 0;
+      rgba(0, 0, 0, 0.46) 75%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    box-shadow: none;
+    opacity: 1;
+    top: 0;
   }
   header nav.scroll {
     background-color: var(--backgroundColor);
@@ -265,7 +268,7 @@ footer {
   }
   .card-footer-up {
     display: flex;
-    flex-flow:row wrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
   }
 }
