@@ -19,7 +19,7 @@
   scroll-behavior: smooth;
 }
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)),
     url("../img/danny-howe-bn-D2bCvpik-unsplash.jpg");
   background-size: cover;
   background-position: center;
@@ -133,9 +133,7 @@ header nav a {
   margin-bottom: 0.5rem;
   transition: color 300ms ease;
 }
-header nav a:hover {
-  color: var(--lighteningOrange);
-}
+
 header nav a:active {
   color: var(--primaryActive);
 }
@@ -204,9 +202,6 @@ footer {
   margin: 0.5rem;
   transition: all 0.1s ease-in-out;
 }
-.footer-centered img:hover {
-  transform: scale(1.2);
-}
 .footer-right {
   display: inline-block;
   align-items: flex-end;
@@ -230,18 +225,17 @@ footer {
   border-radius: 25px;
   transition: all 0.1s ease-in-out;
 }
-.footer-icon-nav img:hover {
-  box-shadow: 0 0 34px #fff900, 0 0 80px #ff6c00;
-  transform: scale(1.2);
-}
 .footer-title {
   text-align: center;
 }
-
 .footer-legal {
   width: 100%;
   text-align: center;
   margin-top: 1rem;
+}
+.footer-centered img {
+  object-fit: cover;
+  transform: scale(1.4);
 }
 
 /* MEDIA QUERY DESKTOP */
@@ -256,7 +250,6 @@ footer {
     height: 0;
     width: 0;
   }
-
   header nav {
     background-color: var(--backgroundColor);
     background: linear-gradient(
@@ -279,6 +272,9 @@ footer {
     max-width: 80%;
     margin: auto;
   }
+  header nav a:hover {
+    color: var(--lighteningOrange);
+  }
   nav ul {
     display: flex;
   }
@@ -292,5 +288,14 @@ footer {
   }
   .footer-centered {
     margin-bottom: 0px;
+    order: 0;
+    width: auto;
+  }
+  .footer-icon-nav img:hover {
+    box-shadow: 0 0 34px #fff900, 0 0 80px #ff6c00;
+    transform: scale(1.2);
+  }
+  .footer-centered img:hover {
+    transform: scale(1.5);
   }
 }
