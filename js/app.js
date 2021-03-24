@@ -34,3 +34,13 @@ window.addEventListener("scroll", function () {
     btn.classList.remove("scroll");
   }
 });
+/* CONTACT */ 
+
+
+// document.getElementsByClassName("form-groupe");
+// document.addEventListener("submit", function (event) {
+//   event.preventDefault();
+//   const firstName = document.getElementById("first-name").value;
+//   const lastName = document.getElementById("last-name").value;
+//   alert(`Bonjour ${lastName} ${firstName}`);
+// });
