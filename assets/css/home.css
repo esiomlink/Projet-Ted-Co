@@ -28,6 +28,8 @@ h2{
     font-weight: 700;
     letter-spacing: 0.1rem;
     line-height: 3rem;
+
+    animation: none;
     
     color: var(--whiteText);
 }
