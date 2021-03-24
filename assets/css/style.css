@@ -139,7 +139,7 @@ header nav a:active {
 }
 h1 {
   animation: pumping 2s ease-in-out infinite;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   color: white;
   line-height: 150%;
   font-weight: bold;
