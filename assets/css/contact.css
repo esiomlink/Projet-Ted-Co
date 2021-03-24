@@ -11,9 +11,9 @@
   flex-direction: column;
 }
 
-.parallax p {
+h1 {
   animation: pumping 2s ease-in-out infinite;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: white;
   line-height: 150%;
   font-weight: bold;
@@ -28,7 +28,6 @@
 }
 
 @media (min-width: 425px) {
-  
   .parallax p {
     font-size: 1.2rem;
   }
@@ -188,7 +187,7 @@
   }
   #tarifs h1 {
     font-size: 1.7rem;
-    margin:  0 0 20px;
+    margin: 0 0 20px;
   }
 }
 @media (min-width: 625px) {
@@ -197,7 +196,7 @@
   }
   #tarifs h1 {
     font-size: 1.9rem;
-    margin:  0 0 20px;
+    margin: 0 0 20px;
   }
 }
 
@@ -298,7 +297,7 @@ input::placeholder {
   font-size: 1em;
 }
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
+input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,

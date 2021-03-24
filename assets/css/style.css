@@ -137,11 +137,12 @@ header nav a {
 header nav a:active {
   color: var(--primaryActive);
 }
-.header-banner {
-  height: auto;
-  object-fit: cover;
-  min-height: 200px;
-  width: 100%;
+h1 {
+  animation: pumping 2s ease-in-out infinite;
+  font-size: 1.2rem;
+  color: white;
+  line-height: 150%;
+  font-weight: bold;
 }
 
 /* SCROLL UP BUTTON */
