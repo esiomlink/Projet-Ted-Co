@@ -11,13 +11,7 @@
   flex-direction: column;
 }
 
-h1 {
-  animation: pumping 2s ease-in-out infinite;
-  font-size: 1.2rem;
-  color: white;
-  line-height: 150%;
-  font-weight: bold;
-}
+
 .parallax span {
   display: block;
   font-size: 0.8rem;
@@ -27,45 +21,6 @@ h1 {
   animation: pumping 2s ease-in-out infinite;
 }
 
-@media (min-width: 425px) {
-  .parallax p {
-    font-size: 1.2rem;
-  }
-  .parallax span {
-    font-size: 1.2rem;
-  }
-}
-@media (min-width: 625px) {
-  .parallax p {
-    font-size: 1.7rem;
-  }
-  .parallax span {
-    font-size: 1.7rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .active {
-    border-bottom: var(--primary) solid 2px;
-  }
-  .active:hover {
-    border-bottom: var(--primary) solid 2px;
-  }
-  .parallax p {
-    font-size: 2rem;
-  }
-  .parallax span {
-    font-size: 2rem;
-  }
-}
-@media (min-width: 1024px) {
-  .parallax p {
-    font-size: 2.8rem;
-  }
-  .parallax span {
-    font-size: 2.8rem;
-  }
-}
 
 /*********TARIFS CARDS****** */
 
