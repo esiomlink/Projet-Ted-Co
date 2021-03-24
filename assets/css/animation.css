@@ -18,3 +18,18 @@
     text-shadow: none;
   }
 }
+
+@keyframes flash {
+  0% {
+    color: var(--primary);
+    text-shadow: none;
+  }
+  90% {
+    color: var(--primary);
+    text-shadow: none;
+  }
+  100% {
+    color: #fff900;
+    text-shadow: 0 0 25px #fff900, 0 0 50px #ff6c00;
+  }
+}
