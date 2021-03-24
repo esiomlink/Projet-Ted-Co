@@ -1,6 +1,5 @@
 @import "style.css";
 
-
 h1 {
   color: var(--primary);
   font-size: 1.6rem;
@@ -16,6 +15,7 @@ h1 {
 .card-aboutUs-right {
   background-color: var(--secondaryBox);
   border-radius: 10px;
+  box-shadow: 0 0 10px var(--backgroundColor);
   color: var(--whiteText);
   margin-left: auto;
   margin-bottom: 3rem;
@@ -27,6 +27,7 @@ h1 {
 .card-aboutUs-left {
   background-color: var(--primaryBox);
   border-radius: 10px;
+  box-shadow: 0 0 10px var(--backgroundColor);
   color: var(--whiteText);
   margin-right: auto;
   margin-bottom: 3rem;
