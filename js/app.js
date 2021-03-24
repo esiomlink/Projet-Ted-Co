@@ -42,5 +42,5 @@ document.addEventListener("submit", function (event) {
   event.preventDefault();
   const firstName = document.getElementById("first-name").value;
   const lastName = document.getElementById("last-name").value;
-  alert(`Bonjour ${lastName} ${firstName}`);
+  alert(` Thank you ${lastName} ${firstName} we have received your payment of 10,000 euros from your bank account`);
 });
