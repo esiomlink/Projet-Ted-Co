@@ -32,8 +32,12 @@
   .parallax span {
     font-size: 1.2rem;
   }
+  .card-parties-title{
+    padding-bottom: 50px;
+  }
   .cards-parties-title h1 {
     font-size: 1.7rem;
+    margin: 0 0 20px;
   }
 }
 @media (min-width: 625px) {
@@ -43,6 +47,7 @@
   }
   .cards-parties-title h1 {
     font-size: 1.9rem;
+    margin : 0 0 20px;
   }
 }
 
@@ -60,6 +65,9 @@
   .cards-parties-title h1 {
     font-size: 2.2rem;
   }
+  .card-parties-title {
+    padding-bottom:150px;
+  }
 }
 @media (min-width: 1024px) {
 
@@ -75,20 +83,16 @@
 }
 .cards-parties-title h1 {
   text-align: center;
-  font-size: 2rem;
   color: var(--primary);
   line-height: 150%;
   font-weight: bold;
-  margin: 50px 0 20px;
+  margin: 0 0 20px;
   padding: 0 30px;
   animation: pumping 2s ease-in-out infinite;
 }
 
 .cards-parties-wrapper {
   text-align: center;
-  min-height: 400px;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .card-party-set {
