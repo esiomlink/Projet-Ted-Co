@@ -33,9 +33,8 @@ const textInsultThree = document.querySelector(".text-insult-card-3");
 const textInsultFour = document.querySelector(".text-insult-card-4");
 const insultButton = document.querySelector(".insult-button-container");
 const dates = document.querySelectorAll(".date");
-
 const cardsEarthquake = document.querySelectorAll(".cards-aboutUs div");
-
+const starsCommentImg = document.querySelectorAll('.stars-comment img');
 
 
 insultButton.addEventListener("click", function (e) {
@@ -55,12 +54,14 @@ insultButton.addEventListener("click", function (e) {
         date.innerHTML = dateLocale;
     });
 
-    /* Earthquake animation */ 
-
+    /* Earthquake animation */
+    starsCommentImg.forEach((img, index) => {
+        img.src = "../assets/img/star-red.svg"
+    })
     cardsEarthquake.forEach((card) => {
         card.classList.add("earthshake");
         insultButton.classList.remove("earthshake");
-        setTimeout(function() {
+        setTimeout(function () {
             card.classList.remove("earthshake");
         }, 500);
     })
