@@ -35,21 +35,21 @@ const insultButton = document.querySelector(".insult-button-container");
 const dates = document.querySelectorAll(".date");
 
 
-insultButton.addEventListener("click", function(e) {
+insultButton.addEventListener("click", function (e) {
     e.preventDefault()
-    textInsultOne.innerHTML = rig(first,second,third,fourth);
-    textInsultTwo.innerHTML = rig(first,second,third,fourth);
-    textInsultThree.innerHTML = rig(first,second,third,fourth);
-    textInsultFour.innerHTML = rig(first,second,third,fourth);
-    let dateLocale = new Date().toLocaleString("fr-FR", {
+    textInsultOne.innerHTML = rig(first, second, third, fourth);
+    textInsultTwo.innerHTML = rig(first, second, third, fourth);
+    textInsultThree.innerHTML = rig(first, second, third, fourth);
+    textInsultFour.innerHTML = rig(first, second, third, fourth);
+    let dateLocale = new Date().toLocaleString("en-EN", {
         year: "numeric",
         month: "2-digit",
         day: "numeric",
         hour: "numeric",
-        minute: "numeric",
-        second: "numeric"});
+        minute: "numeric"
+    });
     dates.forEach(date => {
         date.innerHTML = dateLocale;
     });
-    
+
 })
