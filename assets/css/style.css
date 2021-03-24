@@ -139,10 +139,11 @@ header nav a:active {
 }
 h1 {
   animation: pumping 2s ease-in-out infinite;
-  font-size: 0.9rem;
+  font-size: 1.4rem;
+  font-weight: bold;
   color: white;
   line-height: 150%;
-  font-weight: bold;
+  text-align: center;
 }
 .reveal-img1 {
   opacity: 0;
@@ -161,7 +162,6 @@ h1 {
 .reveal-show-img2 {
   opacity: 1;
   transform: translate3d(0, 0, 0);
-  transition-delay: 0.5s;
 }
 .reveal-img3 {
   opacity: 0;
@@ -171,17 +171,6 @@ h1 {
 .reveal-show-img3 {
   opacity: 1;
   transform: translate3d(0, 0, 0);
-  transition-delay: 1s;
-}
-.reveal-img4 {
-  opacity: 0;
-  transform: translate3d(0, 100px, 0);
-  transition: 1s cubic-bezier(0.5, 0, 0, 1);
-}
-.reveal-show-img4 {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  transition-delay: 0.5s;
 }
 
 /* SCROLL UP BUTTON */
@@ -280,10 +269,10 @@ footer {
 
 @media (min-width: 425px) {
   h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .parallax span {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 625px) {
@@ -350,6 +339,12 @@ footer {
   }
   nav li {
     margin-right: 1rem;
+  }
+  .reveal-show-img2 {
+    transition-delay: 0.3s;
+  }
+  .reveal-show-img3 {
+    transition-delay: 0.6s;
   }
   .card-footer-up {
     display: flex;
