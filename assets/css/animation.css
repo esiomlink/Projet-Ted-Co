@@ -1,0 +1,20 @@
+@import "style.css";
+
+@keyframes pumping {
+  0% {
+    text-shadow: none;
+  }
+  20% {
+    text-shadow: none;
+  }
+
+  50% {
+    text-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
+  }
+  75% {
+    text-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
