@@ -5,15 +5,92 @@
 }
 
 
+.parallax {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.parallax p {
+  animation: pumping 2s ease-in-out infinite;
+  font-size: 0.9rem;
+  color: white;
+  line-height: 150%;
+  font-weight: bold;
+}
+.parallax span {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 150%;
+  font-weight: bold;
+  color: white;
+  animation: pumping 2s ease-in-out infinite;
+}
+
+@media (min-width: 425px) {
+  .parallax p {
+    font-size: 1.2rem;
+  }
+  .parallax span {
+    font-size: 1.2rem;
+  }
+  .cards-parties-title h1 {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 625px) {
+  .parallax p {
+    font-size: 1.7rem;
+  }
+  .parallax span {
+    font-size: 1.7rem;
+  }
+  .cards-parties-title h1 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .active {
+    border-bottom: var(--primary) solid 2px;
+  }
+  .active:hover {
+    border-bottom: var(--primaryHover) solid 2px;
+  }
+  .parallax p {
+    font-size: 2rem;
+  }
+  .parallax span {
+    font-size: 2rem;
+  }
+  .cards-parties-title h1 {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .parallax p {
+    font-size: 2.8rem;
+  }
+  .parallax span {
+    font-size: 2.8rem;
+  }
+  .cards-parties-title h1 {
+    font-size: 2.5rem;
+  }
+}
 
 .cards-parties-title h1 {
   text-align: center;
-  font-size: 35px;
+  font-size: 2.5rem;
   color: var(--primary);
   line-height: 150%;
   font-weight: bold;
   margin: 50px 0 20px;
   padding: 0 30px;
+  animation: pumping 2s ease-in-out infinite;
 }
 
 .cards-parties-wrapper {
@@ -65,29 +142,7 @@
   border-radius: 0 0 25px 25px;
 }
 
-.parallax {
-  width: 100%;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.parallax p {
-  font-size: 0.9rem;
-  color: white;
-  line-height: 150%;
-  font-weight: bold;
-  text-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
-}
-.parallax span {
-  display: block;
-  font-size: 0.8rem;
-  line-height: 150%;
-  font-weight: bold;
-  color: white;
-  text-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
-}
+
 @media (min-width: 425px) {
   .parallax p {
     font-size: 1.2rem;
