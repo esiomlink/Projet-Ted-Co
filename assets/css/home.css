@@ -1,4 +1,5 @@
 @import url("style.css");
+@import url("animation.css");
 
 /* HERO SECTION */
 #hero-container{
@@ -34,7 +35,6 @@
     border: 5px solid transparent;
     border-image-source: linear-gradient(to top left, rgba(249,208,129,1) 0%, rgba(227,2,62,1) 40%, rgba(49,128,135,1) 100%);
     border-image-slice: 1;
-    transition: transform 0.25s;
     letter-spacing: .2rem;
     font-size: 1.25rem;
     font-weight: 300;
@@ -42,6 +42,8 @@
     text-decoration: none;
     text-transform: uppercase;
     color: var(--primary);
+    animation: pumping 2s ease-in-out infinite;
+    cursor: pointer;
 }
 /* PRESENTATION */
 #our-story{
@@ -138,7 +140,7 @@
         border-bottom: var(--primary) solid 2px;
     }
     .active:hover{
-        border-bottom: var(--primaryHover) solid 2px;
+        border-bottom: var(--primary) solid 2px;
     }
     /* HERO SECTION */
     #hero-image{
