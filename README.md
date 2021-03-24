@@ -1,9 +1,8 @@
 # Ted-Co
 
-LE CLIENT
+L'entreprise , 
 
-
-Entreprise Ted’nCO, tenu par des ours en peluche, nous a contacté pour leur projet. Créé par Ted le 3è à Budapest, l’entreprise répond aux besoins de ses clients en ce qui concerne l’événementiel et l’organisation de soirées pour particuliers et professionnels.
+Ted’nCO, tenu par des ours en peluche, nous a contacté pour leur projet. Créé par Ted le 3è à Budapest, l’entreprise répond aux besoins de ses clients en ce qui concerne l’événementiel et l’organisation de soirées pour particuliers et professionnels.
 
 
 PRÉSENTATION DU PROJET 
@@ -22,10 +21,9 @@ Nous avons donc décidé de créer un site vitrine qui reflète au mieux la pers
 LES FONCTIONNALITÉS
 
 Nous avons travaillé sur les fonctionnalités du site dans le but d’offrir une navigation optimale sur tous les supports pour toucher un maximum de personnes.
-
 Nous avons créé un générateur de commentaire avec un mode un peu spécial que nous vous laisserons découvrir ultérieurement .
-
 Vous trouverez également de l’interaction intelligente pour faciliter la lecture et accompagner le client dans son choix .
+
 
 presentation page Home :
 
@@ -38,17 +36,11 @@ On finit ensuite par la section qui présente l'équipe par de petites biographi
 presentation page Our Works :
 
 La page présente chaque type d’événements proposé par l’entreprise avec une courte description. Les images sont mises en forme pour faire en sorte qu’elles ressemblent à une photo instantanée, qui pivote un peu lorsqu’on passe le curseur de la souris dessus, comme si l’on la prenait en main. 
-
 Responsive : La mise en page change lorsqu’on est sur mobile, les photos passent au dessus de leur commentaire respectif, et ainsi cela facilite la lecture. 
 
 presentation page TESTIMONIALS :
 
 La page Testimonials (témoignage) est uniquement consacrée à avoir un retour client et visible de tous. Il y a plusieurs petites cartes avec le nom, la note, le contenu et la date du commentaire. Le tout avec une photo dans un coin pour chaque carte. Il y a également quelques petites subtilités que je vous laisserai découvrir par vous-même. Le tout est bien évidement 100% responsive !
-
-
-
-
-
 
 PAGE CONTACT
 
