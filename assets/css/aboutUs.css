@@ -113,6 +113,7 @@
 }
 .insultButton:hover {
   background-color: var(--closeButton);
+  box-shadow: 0 4px 6px var(--closeButton);
   cursor: pointer;
 }
 .insultButton:active {
