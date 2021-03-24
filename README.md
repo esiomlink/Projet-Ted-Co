@@ -1,5 +1,7 @@
 # Ted-Co
 
+Le site est visitable en ligne ==>  https://ted-co.vercel.app/index.html
+
 L'entreprise , 
 
 Ted’nCO, tenu par des ours en peluche, nous a contacté pour leur projet. Créé par Ted le 3è à Budapest, l’entreprise répond aux besoins de ses clients en ce qui concerne l’événementiel et l’organisation de soirées pour particuliers et professionnels.
