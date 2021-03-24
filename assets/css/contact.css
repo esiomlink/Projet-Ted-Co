@@ -28,6 +28,7 @@
 }
 
 @media (min-width: 425px) {
+  
   .parallax p {
     font-size: 1.2rem;
   }
@@ -184,6 +185,7 @@
   }
   #tarifs h1 {
     font-size: 1.7rem;
+    margin:  0 0 20px;
   }
 }
 @media (min-width: 625px) {
@@ -192,6 +194,7 @@
   }
   #tarifs h1 {
     font-size: 1.9rem;
+    margin:  0 0 20px;
   }
 }
 
