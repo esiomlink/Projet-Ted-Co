@@ -1,9 +1,6 @@
 @import "style.css";
 
-.header-banner {
-  max-height: 400px;
-  object-position: 100% 0%;
-}
+
 h1 {
   color: var(--primary);
   font-size: 1.6rem;
@@ -17,9 +14,8 @@ h1 {
   width: 100%;
 }
 .card-aboutUs-right {
-  background-color: var(--primary);
+  background-color: var(--secondaryBox);
   border-radius: 10px;
-  box-shadow: 0 3px 6px grey;
   color: var(--whiteText);
   margin-left: auto;
   margin-bottom: 3rem;
@@ -29,9 +25,8 @@ h1 {
   z-index: -1;
 }
 .card-aboutUs-left {
-  background-color: var(--primaryHover);
+  background-color: var(--primaryBox);
   border-radius: 10px;
-  box-shadow: 0 3px 6px grey;
   color: var(--whiteText);
   margin-right: auto;
   margin-bottom: 3rem;
@@ -41,7 +36,7 @@ h1 {
   z-index: -1;
 }
 .picture-right {
-  border: 3px solid var(--primaryHover);
+  border: 3px solid var(--backgroundPhotoParties);
   border-radius: 50%;
   height: 70px;
   position: absolute;
@@ -50,7 +45,7 @@ h1 {
   width: 70px;
 }
 .picture-left {
-  border: 3px solid var(--primary);
+  border: 3px solid var(--backgroundPhotoParties);
   border-radius: 50%;
   height: 70px;
   position: absolute;
@@ -65,15 +60,15 @@ h1 {
   background-repeat: no-repeat;
 }
 .ted-picture {
-  background-image: url(../img/test.jpg);
-  background-size: 200%;
-  background-position: 47% 30%;
+  background-image: url(../img/Team/teddyloveu.jpg);
+  background-size: 100%;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .twinky-picture {
-  background-image: url(../img/ted-hero-banner.jpg);
+  background-image: url(../img/DSK.jpg);
   background-size: 250%;
-  background-position: 70% 30%;
+  background-position: 20% 0%;
   background-repeat: no-repeat;
 }
 .bubsy-picture {
@@ -103,7 +98,7 @@ h1 {
   text-align: center;
 }
 .insultButton {
-  background-color: var(--primary);
+  background-color: var(--primaryBox);
   border: 0;
   outline: none;
   border-radius: 5px;
@@ -115,7 +110,7 @@ h1 {
   transition: 200ms;
 }
 .insultButton:hover {
-  background-color: var(--primaryHover);
+  background-color: var(--closeButton);
   cursor: pointer;
 }
 .insultButton:active {
