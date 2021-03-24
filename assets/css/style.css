@@ -144,24 +144,44 @@ h1 {
   line-height: 150%;
   font-weight: bold;
 }
-.reveal-img {
+.reveal-img1 {
   opacity: 0;
-  transform: translate3d(0, 60px, 0);
-  transition: 0.5s cubic-bezier(0.5, 0, 0, 1);
+  transform: translate3d(0, 100px, 0);
+  transition: 1s cubic-bezier(0.5, 0, 0, 1);
 }
-.reveal-show-img {
+.reveal-show-img1 {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
-.reveal-svg {
+.reveal-img2 {
   opacity: 0;
-  transform: translate3d(-160px, 0, 0);
-  transition: 0.5s cubic-bezier(0.5, 0, 0, 1);
+  transform: translate3d(0, 100px, 0);
+  transition: 1s cubic-bezier(0.5, 0, 0, 1);
 }
-.reveal-show-svg {
+.reveal-show-img2 {
   opacity: 1;
   transform: translate3d(0, 0, 0);
-  transition-delay: 0.3s;
+  transition-delay: 0.5s;
+}
+.reveal-img3 {
+  opacity: 0;
+  transform: translate3d(0, 100px, 0);
+  transition: 1s cubic-bezier(0.5, 0, 0, 1);
+}
+.reveal-show-img3 {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition-delay: 1s;
+}
+.reveal-img4 {
+  opacity: 0;
+  transform: translate3d(0, 100px, 0);
+  transition: 1s cubic-bezier(0.5, 0, 0, 1);
+}
+.reveal-show-img4 {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition-delay: 0.5s;
 }
 
 /* SCROLL UP BUTTON */
