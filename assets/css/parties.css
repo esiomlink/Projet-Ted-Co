@@ -1,8 +1,5 @@
 @import url("style.css");
-* {
-  padding: 0;
-  margin: 0;
-}
+
 
 
 .parallax {
@@ -31,9 +28,7 @@
 }
 
 @media (min-width: 425px) {
-  .parallax p {
-    font-size: 1.2rem;
-  }
+
   .parallax span {
     font-size: 1.2rem;
   }
@@ -42,9 +37,7 @@
   }
 }
 @media (min-width: 625px) {
-  .parallax p {
-    font-size: 1.7rem;
-  }
+
   .parallax span {
     font-size: 1.7rem;
   }
@@ -60,9 +53,7 @@
   .active:hover {
     border-bottom: var(--primaryHover) solid 2px;
   }
-  .parallax p {
-    font-size: 2rem;
-  }
+
   .parallax span {
     font-size: 2rem;
   }
@@ -71,9 +62,7 @@
   }
 }
 @media (min-width: 1024px) {
-  .parallax p {
-    font-size: 2.8rem;
-  }
+
   .parallax span {
     font-size: 2.8rem;
   }
@@ -81,10 +70,12 @@
     font-size: 2.5rem;
   }
 }
-
+#cards-parties-title {
+  padding-bottom: 50px;
+}
 .cards-parties-title h1 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--primary);
   line-height: 150%;
   font-weight: bold;
