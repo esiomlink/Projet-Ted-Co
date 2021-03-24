@@ -8,10 +8,10 @@
   --lighteningOrange: #ff6c00;
   --closeButton: #b30c0c;
   --whiteText: #fff;
-  --primaryBox: rgba(158,174,174,0.466);
+  --primaryBox: rgba(158, 174, 174, 0.466);
   --secondaryBox: rgba(126, 112, 112, 0.466);
-  --backgroundPhotoParties:#fff;
-  --backgroundColor:#000;
+  --backgroundPhotoParties: #fff;
+  --backgroundColor: #000;
 }
 
 * {
@@ -191,16 +191,22 @@ footer {
   display: inline-block;
   align-items: flex-start;
 }
-
-.footer-centered img{
+.footer-centered {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  order: -1;
+  width: 100%;
+}
+.footer-centered img {
   width: 50px;
   height: 80px;
   margin: 0.5rem;
   transition: all 0.1s ease-in-out;
- }
- .footer-centered img:hover{
+}
+.footer-centered img:hover {
   transform: scale(1.2);
- }
+}
 .footer-right {
   display: inline-block;
   align-items: flex-end;
@@ -237,12 +243,7 @@ footer {
   text-align: center;
   margin-top: 1rem;
 }
-@media (max-width:799px){
-  .footer-centered{
- width:100%;
- display:flex;
- justify-content: space-around; 
-}}
+
 /* MEDIA QUERY DESKTOP */
 @media (min-width: 799px) {
   .burgerMenu {
@@ -288,5 +289,8 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+  }
+  .footer-centered {
+    margin-bottom: 0px;
   }
 }
