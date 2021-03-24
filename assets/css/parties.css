@@ -68,24 +68,64 @@
 .parallax {
   width: 100%;
   height: 400px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.11)), url(../img/parties/concert.jpg);
-  background-attachment: fixed;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.parallax p {
+  font-size: 0.9rem;
   color: white;
+  line-height: 150%;
   font-weight: bold;
-  font-size: 2rem;
+  text-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
+}
+.parallax span {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 150%;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
+}
+@media (min-width: 425px) {
+  .parallax p {
+    font-size: 1.2rem;
+  }
+  .parallax span {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 625px) {
+  .parallax p {
+    font-size: 1.7rem;
+  }
+  .parallax span {
+    font-size: 1.7rem;
+  }
 }
 
-.parallax h1 {
-  font-size: 2rem;
-  color: var(--whiteText);
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-  line-height: 3rem;
+@media (min-width: 768px) {
+  .active {
+    border-bottom: var(--primary) solid 2px;
+  }
+  .active:hover {
+    border-bottom: var(--primaryHover) solid 2px;
+  }
+  .parallax p {
+    font-size: 2rem;
+  }
+  .parallax span {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .parallax p {
+    font-size: 2.8rem;
+  }
+  .parallax span {
+    font-size: 2.8rem;
+  }
 }
 
 #party-photo {
