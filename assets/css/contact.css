@@ -12,11 +12,11 @@
 }
 
 .parallax p {
+  animation: pumping 2s ease-in-out infinite;
   font-size: 0.9rem;
   color: white;
   line-height: 150%;
   font-weight: bold;
-  text-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
 }
 .parallax span {
   display: block;
@@ -24,7 +24,7 @@
   line-height: 150%;
   font-weight: bold;
   color: white;
-  text-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
+  animation: pumping 2s ease-in-out infinite;
 }
 
 @media (min-width: 425px) {
@@ -71,7 +71,6 @@
 
 #tarifs {
   padding-bottom: 150px;
-  border-bottom: 1px solid #333;
 }
 #tarifs h1 {
   text-align: center;
@@ -81,7 +80,7 @@
   font-weight: bold;
   margin: 50px 0 20px;
   padding: 0 30px;
-  text-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
+  animation: pumping 2s ease-in-out infinite;
 }
 
 .tarifs-box {
@@ -101,7 +100,7 @@
   z-index: 0;
   padding-bottom: 1px;
   background: var(--backgroundText);
-   transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .carte-tarif:hover {
   box-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
