@@ -94,7 +94,6 @@
   width: 350px;
   height: auto;
   margin: 15px 15px;
-  /* border-radius: 20px; */
   cursor: pointer;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   transition: all o.2s ease-in-out;
@@ -102,6 +101,7 @@
   z-index: 0;
   padding-bottom: 1px;
   background: var(--backgroundText);
+   transition: all 0.4s ease-in-out;
 }
 .carte-tarif:hover {
   box-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
