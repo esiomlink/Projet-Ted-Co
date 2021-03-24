@@ -40,8 +40,7 @@
 
 .card-party-block {
   border-radius: 25px;
-
-  background-color: var(--backgroundText);
+  background-color: var(--primaryBox);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
