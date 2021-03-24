@@ -40,7 +40,7 @@
 
 .card-party-block {
   border-radius: 25px;
-  background-color: var(--primaryBox);
+  background-color:var(--backgroundPhotoParties);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -49,7 +49,7 @@
   font-size: 1rem;
   color: var(--primary);
   padding: 3rem;
-  background-color: var(--whiteText);
+  background-color: var(--primaryBox);
   width: 100%;
   height: 100%;
   border-radius: 25px;
@@ -61,8 +61,8 @@
   font-weight: bold;
   font-size: 2rem;
   padding: 0.5em;
-  background-color: var(--backgroundText);
-  border-radius: 0 0 15px 15px;
+  background-color: var(--secondaryBox);
+  border-radius: 0 0 25px 25px;
 }
 
 .parallax {
@@ -164,12 +164,12 @@
     transition: all 0.2s ease-in-out;
   }
   #party-block-1:hover {
-    transform: rotate(-2deg);
+    transform: rotate(-2deg) scale(1.1);
   }
   #party-block-2 {
     transition: all 0.2s ease-in-out;
   }
   #party-block-2:hover {
-    transform: rotate(2deg);
+    transform: rotate(2deg) scale(1.1);
   }
 }

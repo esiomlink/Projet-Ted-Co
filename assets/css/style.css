@@ -8,8 +8,8 @@
   --lighteningOrange: #ff6c00;
   --closeButton: #b30c0c;
   --whiteText: #fff;
-  --primaryBox:#fff;
-  --secondaryBox:#fff;
+  --primaryBox: rgba(158,174,174,0.466);
+  --secondaryBox: rgba(126, 112, 112, 0.466);
   --backgroundPhotoParties:#fff;
   --backgroundColor:#000;
 }
