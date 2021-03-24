@@ -102,6 +102,7 @@
 .insultButton {
   background-color: var(--primaryBox);
   border: 0;
+  box-shadow: 0 0 10px var(--backgroundColor);
   outline: none;
   border-radius: 5px;
   color: var(--whiteText);
@@ -113,12 +114,16 @@
 }
 .insultButton:hover {
   background-color: var(--closeButton);
-  box-shadow: 0 4px 6px var(--closeButton);
+  box-shadow: 0 0px 6px var(--closeButton);
   cursor: pointer;
 }
 .insultButton:active {
   transform: scale(0.95);
 }
+.earthshake {
+  animation: earthquake 200ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+}
+/* DESKTOP SCREEN */
 @media (min-width: 799px) {
   .navAboutUs {
     border-bottom: 2px solid var(--primary);
