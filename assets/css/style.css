@@ -192,6 +192,15 @@ footer {
   align-items: flex-start;
 }
 
+.footer-centered img{
+  width: 50px;
+  height: 80px;
+  margin: 0.5rem;
+  transition: all 0.1s ease-in-out;
+ }
+ .footer-centered img:hover{
+  transform: scale(1.2);
+ }
 .footer-right {
   display: inline-block;
   align-items: flex-end;
@@ -228,7 +237,12 @@ footer {
   text-align: center;
   margin-top: 1rem;
 }
-
+@media (max-width:799px){
+  .footer-centered{
+ width:100%;
+ display:flex;
+ justify-content: space-around; 
+}}
 /* MEDIA QUERY DESKTOP */
 @media (min-width: 799px) {
   .burgerMenu {
