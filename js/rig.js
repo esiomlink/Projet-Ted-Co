@@ -34,6 +34,9 @@ const textInsultFour = document.querySelector(".text-insult-card-4");
 const insultButton = document.querySelector(".insult-button-container");
 const dates = document.querySelectorAll(".date");
 
+const cardsEarthquake = document.querySelectorAll(".cards-aboutUs div");
+
+
 
 insultButton.addEventListener("click", function (e) {
     e.preventDefault()
@@ -52,4 +55,16 @@ insultButton.addEventListener("click", function (e) {
         date.innerHTML = dateLocale;
     });
 
+    /* Earthquake animation */ 
+
+    cardsEarthquake.forEach((card) => {
+        card.classList.add("earthshake");
+        insultButton.classList.remove("earthshake");
+        setTimeout(function() {
+            card.classList.remove("earthshake");
+        }, 500);
+    })
+
 })
+
+

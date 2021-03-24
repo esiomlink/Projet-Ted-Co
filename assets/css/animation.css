@@ -33,3 +33,24 @@
     text-shadow: 0 0 25px #fff900, 0 0 50px #ff6c00;
   }
 }
+
+
+@keyframes earthquake {
+    0% {
+        background-color: var(--closeButton);
+        transform: translateX(2%);
+    }
+    25% {
+        transform: translateX(-2%);
+    }
+    50% {
+      transform: translateX(2%);
+    }
+    75% {
+        transform: translateX(-2%);
+    }
+    100% {
+        background-color: var(--lighteningOrange);
+        transform: translateX(2%);
+    }
+}
