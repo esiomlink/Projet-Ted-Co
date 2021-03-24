@@ -79,15 +79,6 @@ const callbackIMG3 = function (entries, observer) {
     };
   });
 };
-const callbackIMG4 = function (entries, observer) {
-  entries.forEach(function (entry) {
-    if (entry.intersectionRatio > threshold) {
-      entry.target.classList.add("reveal-show-img4");
-      observer.unobserve(entry.target);
-    };
-  });
-
-};
 const observerImg1 = new IntersectionObserver(callbackIMG1, options);
 document.querySelectorAll(".reveal-img1").forEach(function (elements) {
   observerImg1.observe(elements);
@@ -99,8 +90,4 @@ document.querySelectorAll(".reveal-img2").forEach(function (elements) {
 const observerImg3 = new IntersectionObserver(callbackIMG3, options);
 document.querySelectorAll(".reveal-img3").forEach(function (elements) {
   observerImg3.observe(elements);
-});
-const observerImg4 = new IntersectionObserver(callbackIMG4, options);
-document.querySelectorAll(".reveal-img4").forEach(function (elements) {
-  observerImg4.observe(elements);
 });
