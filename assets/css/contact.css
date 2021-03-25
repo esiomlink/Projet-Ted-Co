@@ -182,7 +182,7 @@
   }
   #contacte{
     position:absolute;
-    top: 55rem;
+    top: 50rem;
     
   }
 }
@@ -207,11 +207,23 @@
   }
   #contacte{
     position:absolute;
+    top: 112rem;
+    
+  }
+  
+}
+@media (min-width: 1140px) {
+  #tarifs h1 {
+    font-size: 2.5rem;
+  }
+  #contacte{
+    position:absolute;
     top: 72rem;
     
   }
   
 }
+
 
 /* ****VISIBLE INVISIBLE******** */
 .carte1.is-visible {
