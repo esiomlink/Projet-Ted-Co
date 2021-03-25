@@ -218,7 +218,7 @@
 }
 .section-contact {
   margin-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 10rem;
 }
 .section-contact h2 {
   text-align: center;
@@ -423,6 +423,7 @@ textarea {
 }
 /* ********** CHECKBOX**********/
 .label {
+  
   font-size: 0.7rem;
   color: var(--primary);
   font-weight: bold;
@@ -430,7 +431,7 @@ textarea {
 }
 
 .check {
-  width:50%;
+  width: 100%;
   margin: 20px auto;
   display: flex;
   justify-content: space-around;
@@ -476,6 +477,9 @@ input:checked[type="checkbox"]::before {
   .label {
     font-size: 1rem;
   }
+  .check {
+    width:90%;
+  }
   input[type="checkbox"] {
     width: 40px;
     height: 20px;
@@ -489,8 +493,12 @@ input:checked[type="checkbox"]::before {
   }
 }
 @media (min-width: 625px) {
+  
   .label {
     font-size: 1.3rem;
+  }
+  .check {
+    width:80%;
   }
   input[type="checkbox"] {
     width: 40px;
@@ -509,6 +517,9 @@ input:checked[type="checkbox"]::before {
   .label {
     font-size: 1.5rem;
   }
+  .check {
+    width:70%;
+  }
   input[type="checkbox"] {
     width: 40px;
     height: 20px;
@@ -519,5 +530,10 @@ input:checked[type="checkbox"]::before {
   }
   input:checked[type="checkbox"]::before {
     left: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .check {
+    width:60%;
   }
 }
