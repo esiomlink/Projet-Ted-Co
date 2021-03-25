@@ -34,23 +34,22 @@
   }
 }
 
-
 @keyframes earthquake {
-    0% {
-        background-color: var(--closeButton);
-        transform: translateX(2%);
-    }
-    25% {
-        transform: translateX(-2%);
-    }
-    50% {
-      transform: translateX(2%);
-    }
-    75% {
-        transform: translateX(-2%);
-    }
-    100% {
-        background-color: var(--lighteningOrange);
-        transform: translateX(2%);
-    }
+  0% {
+    background-color: var(--closeButton);
+    transform: translateX(2%) translateY(2%);
+  }
+  25% {
+    transform: translateX(-2%) translateY(-2%);
+  }
+  50% {
+    transform: translateX(2%) translateY(2%);
+  }
+  75% {
+    transform: translateX(-2%) translateY(-2%);
+  }
+  100% {
+    background-color: var(--lighteningOrange);
+    transform: translateX(2%) translateY(2%);
+  }
 }
