@@ -52,6 +52,9 @@ h2{
     animation: pumping 2s ease-in-out infinite;
     cursor: pointer;
 }
+#scroll-target{
+    margin-top: 35rem;
+}
 /* PRESENTATION */
 #our-story{
     display: flex;
