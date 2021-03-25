@@ -24,7 +24,7 @@ Vous trouverez également de l’interaction intelligente pour faciliter la lect
 
 presentation page Home :
 
-Dans la page d’accueil il était important de poser les bases de notre site vitrine. On a donc mismit l'accent sur l'identité de la compagnie et le domaine dans lequel elle propose ses services afin d'informer directement l'utilisateur sur ce qu'il va trouver en naviguant sur celui-ci et éviter les frustrations. 
+Dans la page d’accueil il était important de poser les bases de notre site vitrine. On a donc mis l'accent sur l'identité de la compagnie et le domaine dans lequel elle propose ses services afin d'informer directement l'utilisateur sur ce qu'il va trouver en naviguant sur celui-ci et éviter les frustrations. 
 Vous trouverez différentes sections :
 La section hero avec un texte accrocheur qui permet d'identifier la cible client du site.
 La section "Ou story" présentant la compagnie son histoire et son domaine d'expertise.
