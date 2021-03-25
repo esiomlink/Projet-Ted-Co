@@ -217,13 +217,13 @@
   text-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
 }
 .section-contact {
-  margin-top: 50px;
-  padding-bottom: 100px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
 }
 .section-contact h2 {
   text-align: center;
   color: var(--primary);
-  font-size: 48px;
+  font-size: 1rem;
   font-weight: 400px;
   margin-bottom: 50px;
   padding: 70px 0 0 0;
@@ -234,21 +234,21 @@
   width: 90%;
   background: var(--backgroundText);
   border-radius: 20px;
-  padding: 10%;
+  padding: 3rem;
   box-shadow: 0 0 24px #fff900, 0 0 50px #ff6c00;
 }
 .form-groupe {
   position: relative;
-  margin-bottom: 45px;
+  margin-bottom: 1rem;
 }
 .form-groupe label {
   color: var(--primary);
-  font-size: 20px;
+  font-size: 1rem ;
   font-weight: bold;
 }
 input::placeholder {
   color: rgba(0, 0, 0, 0.39);
-  font-size: 1em;
+  font-size: 1 rem;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -272,28 +272,28 @@ select:-webkit-autofill:focus {
   outline: none;
   background: none;
   border-bottom: 3px solid #aaa;
-  font-size: 25px;
+  font-size: 1 rem;
   color: BLACK;
   font-weight: bold;
 }
 textarea {
   width: 100%;
-  height: 200px;
+  height: 100px;
   border: none;
   border: 3px solid #aaa;
   border-radius: 5px;
   resize: none;
   outline: none;
-  font-size: 20px;
+  font-size: 1 rem;
   background: #f1f1f1;
 }
 .form-groupe:nth-child(4) {
-  margin-bottom: 25px;
+  margin-bottom: 1rem;
 }
 .form-groupe .button-sub {
   display: block;
   width: auto;
-  padding: 15px 60px;
+  padding: 2px 20px;
   border: 3px solid #f1f1f1;
   border-radius: 9999px;
   background-image: linear-gradient(
@@ -304,7 +304,7 @@ textarea {
   );
   background-size: 200%;
   color: #f1f1f1;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
@@ -317,41 +317,41 @@ textarea {
 
 @media (min-width: 425px) {
   .form-groupe .button-sub {
-    font-size: 1.7rem;
+    font-size: 1rem;
   }
   .section-contact h1 {
-    font-size: 1.5rem;
-    margin: 0 0 40px;
+    font-size: 1rem;
+    margin: 0 0 30px;
   }
 }
 @media (min-width: 768px) {
   .form-groupe .button-sub {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
   .container-form {
     width: 80%;
   }
   .section-contact h1 {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     margin: 20px 0 40px;
   }
 }
 @media (min-width: 1024px) {
   .form-groupe .button-sub {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
   .container-form {
     width: 70%;
   }
   .section-contact h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 
 /* **********light title******* */
 
 .light-title ul {
-  margin-top: 40px;
+  margin-top: 1rem;
   width: 100%;
   text-align: center;
   top: 30%;
@@ -361,7 +361,7 @@ textarea {
   list-style-type: none;
   color: var(--primary);
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1 rem;
   letter-spacing: 0.5em;
   animation: flash 1.4s linear infinite;
 }
@@ -407,18 +407,18 @@ textarea {
 }
 @media (min-width: 625px) {
   .light-title ul li {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 }
 
 @media (min-width: 768px) {
   .light-title ul li {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 @media (min-width: 1024px) {
   .light-title ul li {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
   }
 }
 /* ********** CHECKBOX**********/
@@ -430,12 +430,13 @@ textarea {
 }
 
 .check {
-  margin: 40px auto;
+  width:50%;
+  margin: 20px auto;
   display: flex;
   justify-content: space-around;
   border: 1px solid;
   border-radius: 9999px;
-  padding: 30px;
+  padding: 15px;
 }
 input[type="checkbox"] {
   position: relative;
@@ -476,15 +477,15 @@ input:checked[type="checkbox"]::before {
     font-size: 1rem;
   }
   input[type="checkbox"] {
-    width: 45px;
-    height: 23px;
+    width: 40px;
+    height: 20px;
   }
   input[type="checkbox"]::before {
-    width: 23px;
-    height: 23px;
+    width: 20px;
+    height: 20px;
   }
   input:checked[type="checkbox"]::before {
-    left: 23px;
+    left: 20px;
   }
 }
 @media (min-width: 625px) {
@@ -492,15 +493,15 @@ input:checked[type="checkbox"]::before {
     font-size: 1.3rem;
   }
   input[type="checkbox"] {
-    width: 50px;
-    height: 25px;
+    width: 40px;
+    height: 20px;
   }
   input[type="checkbox"]::before {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
   }
   input:checked[type="checkbox"]::before {
-    left: 25px;
+    left: 20px;
   }
 }
 
@@ -509,14 +510,14 @@ input:checked[type="checkbox"]::before {
     font-size: 1.5rem;
   }
   input[type="checkbox"] {
-    width: 55px;
-    height: 30px;
+    width: 40px;
+    height: 20px;
   }
   input[type="checkbox"]::before {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
   input:checked[type="checkbox"]::before {
-    left: 30px;
+    left: 20px;
   }
 }
