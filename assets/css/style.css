@@ -148,7 +148,7 @@ h1 {
 .reveal-img1 {
   opacity: 0;
   transform: translate3d(0, 100px, 0);
-  transition: 1s cubic-bezier(0.5, 0, 0, 1);
+  transition: 0.8s cubic-bezier(0.5, 0, 0, 1);
 }
 .reveal-show-img1 {
   opacity: 1;
@@ -157,7 +157,7 @@ h1 {
 .reveal-img2 {
   opacity: 0;
   transform: translate3d(0, 100px, 0);
-  transition: 1s cubic-bezier(0.5, 0, 0, 1);
+  transition: 0.8s cubic-bezier(0.5, 0, 0, 1);
 }
 .reveal-show-img2 {
   opacity: 1;
@@ -166,7 +166,7 @@ h1 {
 .reveal-img3 {
   opacity: 0;
   transform: translate3d(0, 100px, 0);
-  transition: 1s cubic-bezier(0.5, 0, 0, 1);
+  transition: 0.8s cubic-bezier(0.5, 0, 0, 1);
 }
 .reveal-show-img3 {
   opacity: 1;
