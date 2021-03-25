@@ -133,7 +133,7 @@
 }
 #contacte{
   position:absolute;
-  top:56rem;
+  top:60rem;
   
 }
 
@@ -148,6 +148,11 @@
     font-size: 1.7rem;
     margin: 0 0 20px;
   }
+  #contacte{
+    position:absolute;
+    top: 56rem;
+    
+  }
 }
 @media (min-width: 625px) {
   .carte-tarif h4 {
@@ -157,9 +162,15 @@
     font-size: 1.9rem;
     margin: 0 0 20px;
   }
+  #contacte{
+    position:absolute;
+    top: 56rem;
+    
+  }
 }
 
-@media (min-width: 768px) {
+
+@media (min-width: 760px) {
   #tarifs {
     padding-bottom: 150px;
   }
@@ -171,13 +182,33 @@
   }
   #contacte{
     position:absolute;
-   top: 71rem;
+    top: 55rem;
     
   }
+}
+@media (min-width: 768px) {
+  #contacte{
+    position:absolute;
+    top: 84rem;  
+  }
+
+}
+@media (min-width: 770px) {
+  #contacte{
+    position:absolute;
+    top: 112rem;
+    
+  }
+
 }
 @media (min-width: 1024px) {
   #tarifs h1 {
     font-size: 2.5rem;
+  }
+  #contacte{
+    position:absolute;
+    top: 72rem;
+    
   }
   
 }
