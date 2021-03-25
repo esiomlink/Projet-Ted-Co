@@ -131,6 +131,11 @@
 .carte3 {
   display: none;
 }
+#contacte{
+  position:absolute;
+  top:56rem;
+  
+}
 
 @media (min-width: 425px) {
   #tarifs {
@@ -164,11 +169,17 @@
   #tarifs h1 {
     font-size: 2.2rem;
   }
+  #contacte{
+    position:absolute;
+   top: 71rem;
+    
+  }
 }
 @media (min-width: 1024px) {
   #tarifs h1 {
     font-size: 2.5rem;
   }
+  
 }
 
 /* ****VISIBLE INVISIBLE******** */
@@ -204,6 +215,7 @@
     display: block;
   }
 }
+
 
 /* *******CONTACT****** */
 .section-contact h1 {
