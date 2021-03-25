@@ -2,7 +2,7 @@
 
 .parallax {
   width: 100%;
-  height: 400px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +12,15 @@
   padding: 1rem 2rem;
   margin: 1rem 0;
   width: 100%;
+}
+.cards-aboutUs h2 {
+  animation: pumping 2s ease-in-out infinite;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  line-height: 150%;
+  margin-bottom: 4rem;
+  text-align: center;
 }
 .card-aboutUs-right {
   background-color: var(--secondaryBox);
@@ -131,6 +140,12 @@
   header nav a {
     margin: 0;
   }
+  .parallax {
+    height: 400px;
+  }
+  .cards-aboutUs h2 {
+    font-size: 1.4rem;
+  }
   .cards-aboutUs {
     padding: 1rem 2rem;
     margin: 2rem auto;
@@ -138,6 +153,9 @@
   }
 }
 @media (min-width: 1300px) {
+  .cards-aboutUs h2 {
+    font-size: 1.7rem;
+  }
   .card-aboutUs-right {
     margin-left: auto;
     width: 60%;
