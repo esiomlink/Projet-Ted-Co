@@ -1,4 +1,4 @@
-# Ted-Co 🐻 🧸
+# Ted&Co 🐻 🧸
 
 **Le site est visitable en ligne ==>** https://ted-co.vercel.app/index.html 🚀
 
