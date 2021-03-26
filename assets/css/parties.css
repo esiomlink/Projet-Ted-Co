@@ -1,7 +1,5 @@
 @import url("style.css");
 
-
-
 .parallax {
   width: 100%;
   height: 400px;
@@ -28,11 +26,10 @@
 }
 
 @media (min-width: 425px) {
-
   .parallax span {
     font-size: 1.2rem;
   }
-  .card-parties-title{
+  .card-parties-title {
     padding-bottom: 50px;
   }
   .cards-parties-title h1 {
@@ -41,13 +38,12 @@
   }
 }
 @media (min-width: 625px) {
-
   .parallax span {
     font-size: 1.7rem;
   }
   .cards-parties-title h1 {
     font-size: 1.9rem;
-    margin : 0 0 20px;
+    margin: 0 0 20px;
   }
 }
 
@@ -66,11 +62,10 @@
     font-size: 2.2rem;
   }
   .card-parties-title {
-    padding-bottom:150px;
+    padding-bottom: 150px;
   }
 }
 @media (min-width: 1024px) {
-
   .parallax span {
     font-size: 2.8rem;
   }
@@ -98,7 +93,7 @@
   margin-right: 5px;
   margin-top: 25px;
   margin-bottom: 25px;
-  
+
   border-radius: 5px;
 }
 
@@ -110,7 +105,7 @@
 
 .card-party-block {
   border-radius: 25px;
-  background-color:var(--backgroundPhotoParties);
+  background-color: var(--backgroundPhotoParties);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -134,7 +129,6 @@
   background-color: var(--secondaryBox);
   border-radius: 0 0 25px 25px;
 }
-
 
 @media (min-width: 425px) {
   .parallax p {
@@ -249,13 +243,13 @@
     height: 100%;
   }
   .party-block-1 {
-    transition: all 0.2s ease-in-out;
+    transition: rotate 0.2s ease-in-out;
   }
   .party-block-1:hover {
     transform: rotate(-2deg) scale(1.1);
   }
   .party-block-2 {
-    transition: all 0.2s ease-in-out;
+    transition: rotate 0.2s ease-in-out;
   }
   .party-block-2:hover {
     transform: rotate(2deg) scale(1.1);
