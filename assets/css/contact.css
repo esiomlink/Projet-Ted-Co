@@ -116,7 +116,7 @@
     rgb(255, 249, 0, 1)
   );
   background-size: 200%;
-  transition: all 0.4s ease ease;
+  transition: all 0.4s ease;
 }
 .carte-tarif a:hover {
   background-position: 100%;
