@@ -8,12 +8,13 @@ h2{
 }
 /* HERO SECTION */
 #hero-container{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
     text-align: center;
+    margin-bottom: 0;
 }
 #hero-container img{
     max-width: 400px ;
@@ -21,7 +22,7 @@ h2{
 }
 .hero-text{
     max-width: 80%;
-    margin: 10rem 3rem;
+    margin: 5rem 3rem;
 }
 .hero-text h1{
     font-size: 2rem;
